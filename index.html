@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Lucas</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mim</a></li>
+                <li><a href="#projects" class="nav-link">Meus Projetos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+                <!-- WhatsApp Button -->
+            <a href="https://wa.me/55219997999043" target="_blank" class="whatsapp-button" title="Entre em contato via WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Olá, eu sou Lucas</h1>
+                <h2>Desenvolvedor Full Stack</h2>
+                <p>Avançado em JavaScript, React, Node.js e Python</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="formal.png" alt="Lucas - Desenvolvedor" class="profile-image">
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou brasileiro, tenho 26 anos e sou apaixonado por programação e tecnologia. Possuo conhecimento avançado em JavaScript, HTML, CSS, Node.js e Python, além de experiência com React, TypeScript e PHP.</p>
+                    
+                    <p>Minha jornada no desenvolvimento web começou com projetos pessoais e evoluiu para soluções completas que incluem:</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>JavaScript (ES6+)</li>
+                                <li>React & React Native</li>
+                                <li>TypeScript</li>
+                                <li>HTML5 & CSS3</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Node.js & Express</li>
+                                <li>Python & Flask</li>
+                                <li>PHP</li>
+                                <li>MySQL & SQLite</li>
+                                <li>APIs RESTful</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Mobile</h3>
+                            <ul>
+                                <li>React Native</li>
+                                <li>Expo</li>
+                                <li>TypeScript</li>
+                                <li>AsyncStorage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="apostas-max">
+                    <div class="project-image">
+                        <img src="Apostas Max web/1.png" alt="ApostasMax">
+                    </div>
+                    <div class="project-info">
+                        <h3>ApostasMax</h3>
+                        <p>Portal completo de loterias com geradores inteligentes e desdobramentos matemáticos</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="area-membros">
+                    <div class="project-image">
+                        <img src="Área de Membros web/1.png" alt="Área de Membros">
+                    </div>
+                    <div class="project-info">
+                        <h3>Área de Membros</h3>
+                        <p>Plataforma completa para gerenciamento de cursos online com autenticação e chat</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="conversor-moedas">
+                    <div class="project-image">
+                        <img src="Conversor de Moedas WEB/1.png" alt="Conversor de Moedas">
+                    </div>
+                    <div class="project-info">
+                        <h3>Conversor de Moedas</h3>
+                        <p>Conversor em tempo real entre 150 moedas com API e interface moderna</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="diet-transform">
+                    <div class="project-image">
+                        <img src="Diet-Transform/1.png" alt="Diet-Transform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Diet-Transform</h3>
+                        <p>Funil de vendas completo para produtos dietéticos com sistema de autenticação</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="e-commerce">
+                    <div class="project-image">
+                        <img src="E-Commerce web/1.png" alt="StyleStore">
+                    </div>
+                    <div class="project-info">
+                        <h3>StyleStore</h3>
+                        <p>Loja de roupas completa com sistema de carrinho e autenticação</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="guia-nutricional">
+                    <div class="project-image">
+                        <img src="Guia nutricional mobile/1.png" alt="Guia Nutricional">
+                    </div>
+                    <div class="project-info">
+                        <h3>Guia Nutricional</h3>
+                        <p>Aplicativo completo de saúde e fitness com planos personalizados</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Expo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="padula">
+                    <div class="project-image">
+                        <img src="Padula web/1.png" alt="Padula Accounting">
+                    </div>
+                    <div class="project-info">
+                        <h3>Padula Accounting</h3>
+                        <p>Sistema de captura de leads com modal WhatsApp integrado</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="pagina-vendas">
+                    <div class="project-image">
+                        <img src="Página de Vendas/1.png" alt="Página de Vendas">
+                    </div>
+                    <div class="project-info">
+                        <h3>Página de Vendas</h3>
+                        <p>Landing page para produto de remoção de restrições de crédito</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="pizzaria-mobile">
+                    <div class="project-image">
+                        <img src="Pizzaria mobile/1.jfif" alt="Pizzaria Mobile">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pizzaria Mobile</h3>
+                        <p>Aplicativo de e-commerce para pedidos de pizza com React Native</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Expo</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="pizzaria-web">
+                    <div class="project-image">
+                        <img src="Pizzaria web/1.png" alt="Pizzaria Web">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pizzaria Web</h3>
+                        <p>Site de e-commerce para pizzaria com carrinho interativo</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="robo-vendedor">
+                    <div class="project-image">
+                        <img src="Robo Vendedor web/1.png" alt="Robô Vendedor">
+                    </div>
+                    <div class="project-info">
+                        <h3>Robô Vendedor</h3>
+                        <p>Landing page com modal inteligente para captura de leads</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos Conversar!</h3>
+                    <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato e vamos criar algo incrível juntos!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>lucaxstenck@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+55219997999043" class="phone-link">(21) 9 9777-1729</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rio de Janeiro, Brasil</span>
+                        </div>
+                    </div>
+                    <div class="contact-notice">
+                        <i class="fas fa-clock"></i>
+                        <span>Em dias úteis e horário comercial, geralmente resposta em no máximo 2 horas.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Lucas</h3>
+                    <p>Desenvolvedor Full Stack Júnior</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lucas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
