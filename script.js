@@ -2,246 +2,105 @@
 const projectsData = {
     'apostas-max': {
         title: 'ApostasMax',
-        description: 'Portal completo de loterias brasileiras com geradores inteligentes e desdobramentos matemáticos. Desenvolvido em Python com Flask, oferece ferramentas especializadas para apostadores de loteria, incluindo geradores que permitem excluir números indesejados e selecionar preferências. O sistema implementa algoritmos JavaScript para gerar combinações aleatórias respeitando as regras específicas de cada jogo.',
-        technologies: ['Python', 'Flask', 'JavaScript', 'MySQL', 'PyMySQL'],
-        features: [
-            'Geradores inteligentes para diferentes loterias',
-            'Desdobramentos matemáticos com garantias',
-            'Integração com API da Caixa Econômica',
-            'Sistema de autenticação e sessões',
-            'Interface responsiva e moderna'
-        ],
-        images: [
-            'Apostas Max web/1.png',
-            'Apostas Max web/2.png',
-            'Apostas Max web/3.png',
-            'Apostas Max web/4.png'
-        ],
-        video: 'Apostas Max web/6.mp4'
+        description: 'Portal completo de loterias desenvolvido em Python com Flask. Sistema de geradores inteligentes para diferentes loterias, desdobramentos matemáticos e integração com API da Caixa Econômica Federal.',
+        technologies: ['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+        images: ['Apostas Max web/1.png', 'Apostas Max web/2.png', 'Apostas Max web/3.png', 'Apostas Max web/4.png'],
+        videoUrl: 'https://youtu.be/QbSPUfqbJdA'
     },
     'area-membros': {
         title: 'Área de Membros',
-        description: 'Plataforma completa para gerenciamento de cursos online desenvolvida com React, TypeScript e PHP. O sistema oferece autenticação segura, progresso individual por usuário, player de vídeo integrado para 12 aulas do YouTube, comunidade com chat em tempo real, e interface responsiva com animações modernas.',
-        technologies: ['React 18', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'PHP 8+', 'MySQL'],
-        features: [
-            'Sistema de autenticação completo',
-            'Progresso individual por usuário',
-            'Player de vídeo integrado (12 aulas)',
-            'Chat em tempo real para comunidade',
-            'Dashboard personalizado',
-            'Sistema de segurança robusto'
-        ],
-        images: [
-            'Área de Membros web/1.png',
-            'Área de Membros web/2.png',
-            'Área de Membros web/3.png',
-            'Área de Membros web/4.png',
-            'Área de Membros web/5.png',
-            'Área de Membros web/6.png',
-            'Área de Membros web/7.png',
-            'Área de Membros web/8.png',
-            'Área de Membros web/9.png',
-            'Área de Membros web/10.png',
-            'Área de Membros web/11.png'
-        ],
-        video: 'Área de Membros web/2025-08-05 00-37-58.mp4'
+        description: 'Plataforma completa para gerenciamento de cursos online com React, TypeScript e PHP. Sistema de autenticação, progresso individual, player de vídeo integrado e chat em tempo real.',
+        technologies: ['React', 'TypeScript', 'PHP', 'MySQL', 'Tailwind CSS', 'Framer Motion'],
+        images: ['Área de Membros web/1.png', 'Área de Membros web/2.png', 'Área de Membros web/3.png', 'Área de Membros web/4.png', 'Área de Membros web/5.png', 'Área de Membros web/6.png', 'Área de Membros web/7.png', 'Área de Membros web/8.png', 'Área de Membros web/9.png', 'Área de Membros web/10.png', 'Área de Membros web/11.png'],
+        videoUrl: 'https://www.youtube.com/watch?v=Ua-HHZDPJxw'
     },
     'conversor-moedas': {
         title: 'Conversor de Moedas',
-        description: 'Conversor de moedas desenvolvido com Node.js e Express, oferecendo conversão em tempo real entre 150 moedas diferentes. O aplicativo combina uma API com uma interface web moderna, com atualizações automáticas a cada 5 minutos via API externa.',
-        technologies: ['Node.js', 'Express', 'Axios', 'Node-Cron', 'HTML5', 'CSS3', 'JavaScript'],
-        features: [
-            'Conversão entre 150 moedas globais',
-            'Atualizações automáticas a cada 5 minutos',
-            'Interface moderna com design de morfismo de vidro',
-            'Pesquisa inteligente e filtros',
-            'Seção de moedas populares',
-            'Indicador de status online/offline'
-        ],
-        images: [
-            'Conversor de Moedas WEB/1.png'
-        ],
-        video: 'Conversor de Moedas WEB/2025-08-03 01-25-38.mp4'
+        description: 'Conversor de moedas desenvolvido com Node.js e Express, oferecendo conversão em tempo real entre 150 moedas diferentes com atualizações automáticas via API externa.',
+        technologies: ['Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'Axios'],
+        images: ['Conversor de Moedas WEB/1.png'],
+        videoUrl: 'https://youtu.be/nBWXG9p8_oc'
     },
     'diet-transform': {
         title: 'Diet-Transform',
-        description: 'Funil de vendas completo para produtos dietéticos, com três páginas principais para capturar leads e converter visitantes. A landing page apresenta um design moderno e responsivo, com seções de destaque, benefícios, depoimentos e uma garantia.',
-        technologies: ['HTML5', 'CSS3', 'JavaScript ES6+', 'MySQL', 'Font Awesome', 'Google Fonts'],
-        features: [
-            'Landing page com modal de captura automática',
-            'Sistema de registro/login com validação',
-            'Área de membros com painel de progresso',
-            'Sistema de conquistas e rastreamento',
-            'Cursos em vídeo e downloads',
-            'Análise de comportamento do usuário'
-        ],
-        images: [
-            'Diet-Transform/1.png',
-            'Diet-Transform/2.png',
-            'Diet-Transform/3.png'
-        ],
-        video: 'Diet-Transform/8.mp4'
+        description: 'Funil de vendas completo para produtos dietéticos com três páginas principais. Sistema de autenticação, área de membros com painel de progresso e cursos em vídeo.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
+        images: ['Diet-Transform/1.png', 'Diet-Transform/2.png', 'Diet-Transform/3.png'],
+        videoUrl: 'https://youtu.be/3ol5tkZ8Xy0'
     },
     'e-commerce': {
         title: 'StyleStore',
-        description: 'Loja de roupas de comércio eletrônico moderna construída com HTML, CSS, JavaScript, PHP e MySQL. Apresenta um design moderno em preto, branco e verde, com sistema completo de autenticação de usuário e funcionalidade de carrinho de compras.',
+        description: 'Loja de roupas de comércio eletrônico moderna construída com HTML, CSS, JavaScript, PHP e MySQL. Sistema completo de autenticação, carrinho de compras e gerenciamento de produtos.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-        features: [
-            'Sistema completo de autenticação',
-            'Funcionalidade de carrinho de compras',
-            'Páginas detalhadas de produtos',
-            'Filtragem por categorias',
-            'Funcionalidade de busca',
-            'Paginação (5 produtos por página)'
-        ],
-        images: [
-            'E-Commerce web/1.png',
-            'E-Commerce web/2.png',
-            'E-Commerce web/3.png'
-        ],
-        video: 'E-Commerce web/8.mp4'
+        images: ['E-Commerce web/1.png', 'E-Commerce web/2.png', 'E-Commerce web/3.png'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     },
     'guia-nutricional': {
         title: 'Guia Nutricional',
-        description: 'Aplicativo completo de saúde e fitness desenvolvido com React Native e Expo. Oferece uma solução completa para gerenciamento de saúde, nutrição e fitness com planos alimentares personalizados, biblioteca de receitas e planos de exercícios.',
-        technologies: ['React Native', 'Expo', 'TypeScript', 'NativeWind', 'AsyncStorage', 'React Navigation'],
-        features: [
-            'Planos alimentares personalizados',
-            'Biblioteca de 500+ receitas low-carb',
-            '500+ receitas low-calorie',
-            'Planos de exercícios personalizados',
-            'Acompanhamento de progresso',
-            'Calculadora de IMC integrada'
-        ],
-        images: [
-            'Guia nutricional mobile/1.png',
-            'Guia nutricional mobile/2.png',
-            'Guia nutricional mobile/3.png',
-            'Guia nutricional mobile/4.png',
-            'Guia nutricional mobile/5.png',
-            'Guia nutricional mobile/6.png',
-            'Guia nutricional mobile/7.png',
-            'Guia nutricional mobile/8.png',
-            'Guia nutricional mobile/9.png',
-            'Guia nutricional mobile/10.png',
-            'Guia nutricional mobile/11.png',
-            'Guia nutricional mobile/12.png',
-            'Guia nutricional mobile/13.png',
-            'Guia nutricional mobile/14.png'
-        ],
-        video: 'Guia nutricional mobile/Untitled.mp4'
+        description: 'Aplicativo React Native completo para gerenciamento de saúde, nutrição e fitness. Planos alimentares personalizados, biblioteca de receitas e acompanhamento de progresso.',
+        technologies: ['React Native', 'TypeScript', 'Expo', 'AsyncStorage', 'NativeWind'],
+        images: ['Guia nutricional mobile/1.png', 'Guia nutricional mobile/2.png', 'Guia nutricional mobile/3.png', 'Guia nutricional mobile/4.png', 'Guia nutricional mobile/5.png', 'Guia nutricional mobile/6.png', 'Guia nutricional mobile/7.png', 'Guia nutricional mobile/8.png', 'Guia nutricional mobile/9.png', 'Guia nutricional mobile/10.png', 'Guia nutricional mobile/11.png', 'Guia nutricional mobile/12.png', 'Guia nutricional mobile/13.png', 'Guia nutricional mobile/14.png'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     },
     'padula': {
         title: 'Padula Accounting',
-        description: 'Sistema de captura de leads para o site da Padula Accounting, integrando um modal que aparece quando o usuário clica no botão do WhatsApp. O sistema combina um front-end moderno com um back-end robusto para uma experiência de usuário fluida.',
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express.js', 'SQLite'],
-        features: [
-            'Modal inteligente de captura de leads',
-            'Back-end Node.js com API REST',
-            'Integração com WhatsApp',
-            'Validação robusta em várias camadas',
-            'Interface moderna com animações',
-            'Armazenamento persistente com SQLite'
-        ],
-        images: [
-            'Padula web/1.png',
-            'Padula web/2.png'
-        ],
-        video: 'Padula web/1.mp4'
+        description: 'Sistema de captura de leads com modal WhatsApp integrado. Front-end moderno com back-end Node.js e banco de dados SQLite para uma experiência fluida.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite'],
+        images: ['Padula web/1.png', 'Padula web/2.png'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     },
     'pagina-vendas': {
         title: 'Página de Vendas',
-        description: 'Landing page para produto que oferece um guia para auxiliar consumidores a removerem seus nomes e CPFs das "listas de restrição interna" mantidas por bancos e financeiras. O produto se posiciona como uma solução para o problema de ter o crédito negado.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        features: [
-            'Landing page otimizada para conversão',
-            'Sistema de captura de leads',
-            'Página de vendas persuasiva',
-            'Garantia de devolução do dinheiro',
-            'Bônus relacionados ao crédito',
-            'Promessa de resultados em 7 dias'
-        ],
-        images: [
-            'Página de Vendas/1.png',
-            'Página de Vendas/2.png',
-            'Página de Vendas/3.png',
-            'Página de Vendas/4.png',
-            'Página de Vendas/5.png',
-            'Página de Vendas/6.png',
-            'Página de Vendas/7.png',
-            'Página de Vendas/8.png'
-        ],
-        video: 'Página de Vendas/2025-08-05 01-39-26.mp4'
+        description: 'Landing page moderna para captura de leads com sistema modal inteligente. Design responsivo com backend PHP e integração com banco de dados MySQL.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
+        images: ['Página de Vendas/1.png', 'Página de Vendas/2.png', 'Página de Vendas/3.png', 'Página de Vendas/4.png', 'Página de Vendas/5.png', 'Página de Vendas/6.png', 'Página de Vendas/7.png', 'Página de Vendas/8.png'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     },
     'pizzaria-mobile': {
         title: 'Pizzaria Mobile',
-        description: 'Aplicativo de e-commerce em React Native com TypeScript e Expo Go, compatível com Android e iOS, oferecendo uma experiência moderna para pedidos de pizza. Inclui sistema completo de autenticação, catálogo de produtos e carrinho de compras.',
-        technologies: ['React Native', 'TypeScript', 'Expo Go', 'AsyncStorage', 'Context API', 'MySQL'],
-        features: [
-            'Sistema de autenticação completo',
-            'Catálogo com categorias (Pizzas, Bebidas, Combos, Doces)',
-            'Carrinho de compras interativo',
-            'Interface adaptativa com saudação personalizada',
-            'Validação de duplicatas (login/email único)',
-            'Design system com cores azul e gradientes'
-        ],
-        images: [
-            'Pizzaria mobile/1.jfif',
-            'Pizzaria mobile/2.jfif',
-            'Pizzaria mobile/3.jfif',
-            'Pizzaria mobile/4.jfif',
-            'Pizzaria mobile/5.jfif',
-            'Pizzaria mobile/6.jfif',
-            'Pizzaria mobile/7.jfif'
-        ],
-        video: 'Pizzaria mobile/1.mp4'
+        description: 'Aplicativo de e-commerce em React Native com TypeScript e Expo Go para pedidos de pizza. Sistema completo de autenticação, catálogo dinâmico e carrinho de compras.',
+        technologies: ['React Native', 'TypeScript', 'Expo', 'MySQL', 'AsyncStorage'],
+        images: ['Pizzaria mobile/1.jfif', 'Pizzaria mobile/2.jfif', 'Pizzaria mobile/3.jfif', 'Pizzaria mobile/4.jfif', 'Pizzaria mobile/5.jfif', 'Pizzaria mobile/6.jfif', 'Pizzaria mobile/7.jfif'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     },
     'pizzaria-web': {
         title: 'Pizzaria Web',
-        description: 'Site de e-commerce para pizzaria com design responsivo e navegação entre as páginas Início, Menu e Sobre. Carregamento dinâmico de menus via API, carrinho de compras interativo com persistência localStorage e confirmações modais estilizadas.',
-        technologies: ['HTML5', 'CSS3', 'JavaScript ES6+', 'Node.js', 'Express.js', 'SQLite3'],
-        features: [
-            'Design responsivo com navegação entre páginas',
-            'Carregamento dinâmico de menus via API',
-            'Carrinho de compras interativo',
-            'Persistência localStorage',
-            'Confirmações modais estilizadas',
-            'Banco de dados SQLite com produtos de exemplo'
-        ],
-        images: [
-            'Pizzaria web/1.png',
-            'Pizzaria web/2.png',
-            'Pizzaria web/3.png'
-        ],
-        video: 'Pizzaria web/9.mp4'
+        description: 'Sistema de e-commerce para pizzaria com frontend responsivo e backend Node.js. Carrinho de compras interativo, carregamento dinâmico de menus e confirmações modais.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite'],
+        images: ['Pizzaria web/1.png', 'Pizzaria web/2.png', 'Pizzaria web/3.png'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     },
     'robo-vendedor': {
         title: 'Robô Vendedor',
-        description: 'Landing page moderna e responsiva, projetada para capturar leads por meio de um sistema modal inteligente. Desenvolvido com HTML5, CSS3 e JavaScript, com backend PHP e integração com banco de dados MySQL.',
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
-        features: [
-            'Design responsivo para todos os dispositivos',
-            'Modal de captura inteligente de leads',
-            'Validação em tempo real',
-            'Mascaramento de número de telefone',
-            'Prevenção de envios duplicados',
-            'Integração de backend com PHP'
-        ],
-        images: [
-            'Robo Vendedor web/1.png',
-            'Robo Vendedor web/2.png',
-            'Robo Vendedor web/3.png'
-        ],
-        video: 'Robo Vendedor web/4.mp4'
+        description: 'Landing page moderna para captura de leads com modal inteligente. Sistema de validação em tempo real, integração com WhatsApp e design responsivo.',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
+        images: ['Robo Vendedor web/1.png', 'Robo Vendedor web/2.png', 'Robo Vendedor web/3.png'],
+        videoUrl: 'https://youtu.be/3_uZiSALiMU'
     }
 };
+
+// Função para extrair ID do YouTube da URL
+function extractYouTubeId(url) {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+}
+
+// Função para criar iframe do YouTube
+function createYouTubeEmbed(url) {
+    const videoId = extractYouTubeId(url);
+    if (videoId) {
+        return `<iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    return `<p>Vídeo não disponível</p>`;
+}
 
 // Elementos DOM
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const modal = document.getElementById('projectModal');
-const modalContent = document.querySelector('.modal-content');
+const modalContent = document.getElementById('modalContent');
 const closeBtn = document.querySelector('.close');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -278,73 +137,63 @@ navLinks.forEach(link => {
 projectCards.forEach(card => {
     card.addEventListener('click', () => {
         const projectId = card.getAttribute('data-project');
-        const projectData = projectsData[projectId];
-        
-        if (projectData) {
-            openProjectModal(projectData);
-        }
+        openProjectModal(projectId);
     });
 });
 
-function openProjectModal(project) {
-    const modalBody = document.querySelector('.modal-body');
+// Função para abrir modal do projeto
+function openProjectModal(projectId) {
+    const project = projectsData[projectId];
+    if (!project) return;
+
+    const modal = document.getElementById('projectModal');
+    const modalContent = document.getElementById('modalContent');
     
-    let imagesHTML = '';
-    if (project.images && project.images.length > 0) {
-        imagesHTML = `
-            <div class="project-gallery">
-                <h4>Galeria de Imagens</h4>
-                <div class="gallery-grid">
-                    ${project.images.map(img => `
-                        <div class="gallery-item">
-                            <img src="${img}" alt="${project.title}" onclick="openImageModal('${img}')">
-                        </div>
-                    `).join('')}
+    // Limpar conteúdo anterior
+    modalContent.innerHTML = '';
+    
+    // Criar conteúdo do modal
+    const content = `
+        <div class="modal-header">
+            <h2>${project.title}</h2>
+            <button class="close-btn" onclick="closeProjectModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="project-description">
+                <p>${project.description}</p>
+            </div>
+            
+            <div class="project-technologies">
+                <h3>Tecnologias Utilizadas:</h3>
+                <div class="tech-tags">
+                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
             </div>
-        `;
-    }
-
-    let videoHTML = '';
-    if (project.video) {
-        videoHTML = `
-            <div class="project-video">
-                <h4>Demonstração em Vídeo</h4>
-                <video controls>
-                    <source src="${project.video}" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-            </div>
-        `;
-    }
-
-    modalBody.innerHTML = `
-        <div class="project-modal-content">
-            <h2>${project.title}</h2>
-            <p class="project-description">${project.description}</p>
             
-            <div class="project-details">
-                <div class="project-tech-stack">
-                    <h4>Tecnologias Utilizadas</h4>
-                    <div class="tech-tags">
-                        ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+            <div class="project-media">
+                <div class="video-section">
+                    <h3>Demonstração em Vídeo:</h3>
+                    <div class="video-container">
+                        ${createYouTubeEmbed(project.videoUrl)}
                     </div>
                 </div>
                 
-                <div class="project-features">
-                    <h4>Principais Funcionalidades</h4>
-                    <ul>
-                        ${project.features.map(feature => `<li>${feature}</li>`).join('')}
-                    </ul>
+                <div class="images-section">
+                    <h3>Imagens do Projeto:</h3>
+                    <div class="image-gallery">
+                        ${project.images.map(img => `
+                            <div class="gallery-item">
+                                <img src="${img}" alt="${project.title}" onclick="openImageModal('${img}')">
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
             </div>
-            
-            ${imagesHTML}
-            ${videoHTML}
         </div>
     `;
     
-    modal.style.display = 'block';
+    modalContent.innerHTML = content;
+    modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
 
@@ -359,6 +208,44 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
+    }
+});
+
+// Função para fechar modal do projeto
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Função para abrir modal de imagem
+function openImageModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    
+    modalImage.src = imageSrc;
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+// Função para fechar modal de imagem
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Fechar modais ao clicar fora deles
+window.addEventListener('click', (event) => {
+    const projectModal = document.getElementById('projectModal');
+    const imageModal = document.getElementById('imageModal');
+    
+    if (event.target === projectModal) {
+        closeProjectModal();
+    }
+    
+    if (event.target === imageModal) {
+        closeImageModal();
     }
 });
 
@@ -402,26 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
-
-// Função para abrir modal de imagem (opcional)
-function openImageModal(imageSrc) {
-    const imageModal = document.createElement('div');
-    imageModal.className = 'image-modal';
-    imageModal.innerHTML = `
-        <div class="image-modal-content">
-            <span class="image-close">&times;</span>
-            <img src="${imageSrc}" alt="Imagem do projeto">
-        </div>
-    `;
-    
-    document.body.appendChild(imageModal);
-    
-    imageModal.addEventListener('click', (e) => {
-        if (e.target === imageModal || e.target.classList.contains('image-close')) {
-            document.body.removeChild(imageModal);
-        }
-    });
-}
 
 // Adicionar estilos CSS para o modal de imagem
 const imageModalStyles = `

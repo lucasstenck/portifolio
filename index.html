@@ -318,9 +318,7 @@
                     <p>Desenvolvedor Full Stack Júnior</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/lucasstenck/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -329,16 +327,29 @@
         </div>
     </footer>
 
-    <!-- Project Modal -->
-    <div class="modal" id="projectModal">
+    <!-- Modal de Projeto -->
+    <div id="projectModal" class="project-modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body">
-                <!-- Content will be loaded dynamically -->
+            <div id="modalContent">
+                <!-- Conteúdo será inserido dinamicamente -->
             </div>
         </div>
     </div>
 
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="image-modal">
+        <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
+        <div class="image-modal-content">
+            <img id="modalImage" src="" alt="Imagem do projeto">
+        </div>
+    </div>
+
+    <!-- Botão WhatsApp Fixo -->
+    <a href="https://wa.me/55219997999043" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script src="script.js"></script>
 </body>
+</html> 
 </html> 
