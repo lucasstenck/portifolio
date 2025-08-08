@@ -40,42 +40,49 @@ const projectsData = {
         description: 'Aplicativo React Native completo para gerenciamento de saúde, nutrição e fitness. Planos alimentares personalizados, biblioteca de receitas e acompanhamento de progresso.',
         technologies: ['React Native', 'TypeScript', 'Expo', 'AsyncStorage', 'NativeWind'],
         images: ['Guia nutricional mobile/1.png', 'Guia nutricional mobile/2.png', 'Guia nutricional mobile/3.png', 'Guia nutricional mobile/4.png', 'Guia nutricional mobile/5.png', 'Guia nutricional mobile/6.png', 'Guia nutricional mobile/7.png', 'Guia nutricional mobile/8.png', 'Guia nutricional mobile/9.png', 'Guia nutricional mobile/10.png', 'Guia nutricional mobile/11.png', 'Guia nutricional mobile/12.png', 'Guia nutricional mobile/13.png', 'Guia nutricional mobile/14.png'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
+        videoUrl: 'https://youtube.com/shorts/YK5u0UovdpA'
     },
     'padula': {
         title: 'Padula Accounting',
         description: 'Sistema de captura de leads com modal WhatsApp integrado. Front-end moderno com back-end Node.js e banco de dados SQLite para uma experiência fluida.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite'],
         images: ['Padula web/1.png', 'Padula web/2.png'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
+        videoUrl: 'https://youtu.be/T7De7YKaxJw'
     },
     'pagina-vendas': {
         title: 'Página de Vendas',
         description: 'Landing page moderna para captura de leads com sistema modal inteligente. Design responsivo com backend PHP e integração com banco de dados MySQL.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
         images: ['Página de Vendas/1.png', 'Página de Vendas/2.png', 'Página de Vendas/3.png', 'Página de Vendas/4.png', 'Página de Vendas/5.png', 'Página de Vendas/6.png', 'Página de Vendas/7.png', 'Página de Vendas/8.png'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
+        videoUrl: 'https://youtu.be/A4QI4wjRg9s'
     },
     'pizzaria-mobile': {
         title: 'Pizzaria Mobile',
         description: 'Aplicativo de e-commerce em React Native com TypeScript e Expo Go para pedidos de pizza. Sistema completo de autenticação, catálogo dinâmico e carrinho de compras.',
         technologies: ['React Native', 'TypeScript', 'Expo', 'MySQL', 'AsyncStorage'],
         images: ['Pizzaria mobile/1.jfif', 'Pizzaria mobile/2.jfif', 'Pizzaria mobile/3.jfif', 'Pizzaria mobile/4.jfif', 'Pizzaria mobile/5.jfif', 'Pizzaria mobile/6.jfif', 'Pizzaria mobile/7.jfif'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
+        videoUrl: 'https://youtube.com/shorts/pVgTo6tIphk'
     },
     'pizzaria-web': {
         title: 'Pizzaria Web',
         description: 'Sistema de e-commerce para pizzaria com frontend responsivo e backend Node.js. Carrinho de compras interativo, carregamento dinâmico de menus e confirmações modais.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite'],
         images: ['Pizzaria web/1.png', 'Pizzaria web/2.png', 'Pizzaria web/3.png'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
+        videoUrl: 'https://youtu.be/8i5PQoHw9cc'
     },
     'robo-vendedor': {
         title: 'Robô Vendedor',
         description: 'Landing page moderna para captura de leads com modal inteligente. Sistema de validação em tempo real, integração com WhatsApp e design responsivo.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
         images: ['Robo Vendedor web/1.png', 'Robo Vendedor web/2.png', 'Robo Vendedor web/3.png'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
+        videoUrl: 'https://youtu.be/LXiqHN8r4xA'
+    },
+    'reforco-online': {
+        title: 'Reforço Online',
+        description: 'Plataforma completa que conecta alunos e professores para aulas de reforço escolar online. Sistema de chat em tempo real, dashboard para gestão de aulas, upload de materiais didáticos e controle de disponibilidade. Interface moderna com React e TypeScript, backend PHP com APIs RESTful e banco MySQL.',
+        technologies: ['React', 'TypeScript', 'PHP', 'MySQL', 'CSS3', 'JavaScript'],
+        images: ['Reforço Online/1.png', 'Reforço Online/2.png', 'Reforço Online/3.png', 'Reforço Online/4.png', 'Reforço Online/5.png', 'Reforço Online/6.png', 'Reforço Online/7.png', 'Reforço Online/8.png', 'Reforço Online/9.png', 'Reforço Online/10.png', 'Reforço Online/11.png', 'Reforço Online/12.png', 'Reforço Online/13.png', 'Reforço Online/14.png', 'Reforço Online/15.png', 'Reforço Online/16.png', 'Reforço Online/17.png', 'Reforço Online/18.png'],
+        videoUrl: 'https://youtu.be/GWz9RJ-Kx9U'
     }
 };
 

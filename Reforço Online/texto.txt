@@ -1,0 +1,62 @@
+Plataforma de Reforço Escolar Online
+Uma plataforma web completa que conecta alunos e professores para aulas de reforço escolar online. O sistema oferece um ambiente virtual completo para o aprendizado, com funcionalidades avançadas de comunicação e gestão educacional.
+Principais Funcionalidades:
+Para Alunos:
+Cadastro e perfil personalizado com foto
+Busca por professores por disciplina e nível de ensino
+Criação de ofertas de aulas com especificações detalhadas
+Sistema de chat em tempo real com professores
+Aulas virtuais com sala de aula online
+Dashboard para acompanhar progresso e aulas agendadas
+Avaliação e feedback dos professores
+Para Professores:
+Perfil profissional com qualificações e experiência
+Gestão de disciplinas e níveis de ensino
+Visualização e resposta a ofertas de alunos
+Sistema de chat integrado
+Dashboard para gerenciar aulas e alunos
+Upload de materiais didáticos
+Controle de disponibilidade e preços
+Tecnologias Utilizadas:
+Frontend: React com TypeScript
+Backend: PHP com APIs RESTful
+Banco de Dados: MySQL
+Chat em tempo real
+Upload e gestão de arquivos
+Sistema de autenticação seguro
+Recursos Avançados:
+Sistema de notificações
+Relatórios e analytics para administradores
+Interface responsiva e moderna
+Sistema de avaliações e reviews
+Gestão de materiais didáticos
+Controle de pagamentos e preços
+A plataforma oferece uma solução completa para o mercado de educação online, facilitando a conexão entre alunos que precisam de reforço escolar e professores qualificados, tudo em um ambiente virtual seguro e intuitivo.
+
+
+ecnologias do Projeto:
+Frontend:
+React 18 com TypeScript
+CSS3 para estilização
+React Router para navegação
+Context API para gerenciamento de estado
+Backend:
+PHP 8+ com APIs RESTful
+MySQL para banco de dados
+Apache/Nginx como servidor web
+Ferramentas de Desenvolvimento:
+Node.js e npm para gerenciamento de dependências
+Git para controle de versão
+VS Code como IDE
+Funcionalidades Especiais:
+Sistema de chat em tempo real
+Upload e gestão de arquivos (fotos)
+Sistema de autenticação JWT
+APIs RESTful para comunicação frontend-backend
+Interface responsiva e moderna
+Estrutura:
+Arquitetura MVC no backend
+Componentes reutilizáveis no frontend
+Banco de dados relacional com múltiplas tabelas
+Sistema de rotas dinâmicas
+O projeto combina as melhores práticas de desenvolvimento web moderno com uma arquitetura robusta e escalável.   https://youtu.be/GWz9RJ-Kx9U
