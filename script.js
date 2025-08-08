@@ -30,7 +30,7 @@ const projectsData = {
     },
     'e-commerce': {
         title: 'StyleStore',
-        description: 'Loja de roupas de comércio eletrônico moderna construída com HTML, CSS, JavaScript, PHP e MySQL. Sistema completo de autenticação, carrinho de compras e gerenciamento de produtos.',
+        description: 'Loja de roupas de comércio eletrônico construída com HTML, CSS, JavaScript, PHP e MySQL. Sistema completo de autenticação, carrinho de compras e gerenciamento de produtos.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
         images: ['E-Commerce web/1.png', 'E-Commerce web/2.png', 'E-Commerce web/3.png'],
         videoUrl: 'https://youtu.be/3_uZiSALiMU'
@@ -51,7 +51,7 @@ const projectsData = {
     },
     'pagina-vendas': {
         title: 'Página de Vendas',
-        description: 'Landing page moderna para captura de leads com sistema modal inteligente. Design responsivo com backend PHP e integração com banco de dados MySQL.',
+        description: 'Landing page para captura de leads com sistema modal inteligente. Design responsivo com backend PHP e integração com banco de dados MySQL.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
         images: ['Página de Vendas/1.png', 'Página de Vendas/2.png', 'Página de Vendas/3.png', 'Página de Vendas/4.png', 'Página de Vendas/5.png', 'Página de Vendas/6.png', 'Página de Vendas/7.png', 'Página de Vendas/8.png'],
         videoUrl: 'https://youtu.be/A4QI4wjRg9s'
@@ -72,14 +72,14 @@ const projectsData = {
     },
     'robo-vendedor': {
         title: 'Robô Vendedor',
-        description: 'Landing page moderna para captura de leads com modal inteligente. Sistema de validação em tempo real, integração com WhatsApp e design responsivo.',
+        description: 'Landing page para captura de leads com modal inteligente. Sistema de validação em tempo real, integração com WhatsApp e design responsivo.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
         images: ['Robo Vendedor web/1.png', 'Robo Vendedor web/2.png', 'Robo Vendedor web/3.png'],
         videoUrl: 'https://youtu.be/LXiqHN8r4xA'
     },
     'reforco-online': {
         title: 'Reforço Online',
-        description: 'Plataforma completa que conecta alunos e professores para aulas de reforço escolar online. Sistema de chat em tempo real, dashboard para gestão de aulas, upload de materiais didáticos e controle de disponibilidade. Interface moderna com React e TypeScript, backend PHP com APIs RESTful e banco MySQL.',
+        description: 'Plataforma completa que conecta alunos e professores para aulas de reforço escolar online. Sistema de chat em tempo real, dashboard para gestão de aulas, upload de materiais didáticos e controle de disponibilidade. Interface com React e TypeScript, backend PHP com APIs RESTful e banco MySQL.',
         technologies: ['React', 'TypeScript', 'PHP', 'MySQL', 'CSS3', 'JavaScript'],
         images: ['Reforço Online/1.png', 'Reforço Online/2.png', 'Reforço Online/3.png', 'Reforço Online/4.png', 'Reforço Online/5.png', 'Reforço Online/6.png', 'Reforço Online/7.png', 'Reforço Online/8.png', 'Reforço Online/9.png', 'Reforço Online/10.png', 'Reforço Online/11.png', 'Reforço Online/12.png', 'Reforço Online/13.png', 'Reforço Online/14.png', 'Reforço Online/15.png', 'Reforço Online/16.png', 'Reforço Online/17.png', 'Reforço Online/18.png'],
         videoUrl: 'https://youtu.be/GWz9RJ-Kx9U'
