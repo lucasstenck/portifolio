@@ -84,7 +84,7 @@ const projectsData = {
         images: ['Reforço Online/1.png', 'Reforço Online/2.png', 'Reforço Online/3.png', 'Reforço Online/4.png', 'Reforço Online/5.png', 'Reforço Online/6.png', 'Reforço Online/7.png', 'Reforço Online/8.png', 'Reforço Online/9.png', 'Reforço Online/10.png', 'Reforço Online/11.png', 'Reforço Online/12.png', 'Reforço Online/13.png', 'Reforço Online/14.png', 'Reforço Online/15.png', 'Reforço Online/16.png', 'Reforço Online/17.png', 'Reforço Online/18.png'],
         videoUrl: 'https://youtu.be/GWz9RJ-Kx9U'
     },
-            'conversor-de-moedas-mobile': {
+        'conversor-de-moedas-mobile': {
             title: 'Conversor de Moedas Mobile',
             description: 'Aplicativo React Native para conversão de moedas em tempo real com 150+ moedas. Interface moderna com design dark mode, taxas atualizadas via API e sistema de fallback para funcionamento offline.',
             technologies: ['React Native', 'Expo', 'TypeScript', 'API AwesomeAPI'],
