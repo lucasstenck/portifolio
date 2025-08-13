@@ -103,7 +103,7 @@ const projectsData = {
             description: 'Aplicativo móvel completo para download de livros em PDF. Backend Node.js com Express e MySQL, frontend React Native com Expo. Sistema de autenticação JWT, busca de livros, downloads e interface mobile responsiva para Android e iOS.',
             technologies: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'JWT'],
             images: ['Biblioteca Digital/1.png', 'Biblioteca Digital/2.png', 'Biblioteca Digital/3.png', 'Biblioteca Digital/4.png', 'Biblioteca Digital/5.png', 'Biblioteca Digital/6.png', 'Biblioteca Digital/7.png', 'Biblioteca Digital/8.png', 'Biblioteca Digital/9.png', 'Biblioteca Digital/10.png', 'Biblioteca Digital/11.png', 'Biblioteca Digital/12.png'],
-            videoUrl: 'https://youtu.be/Ly66MVUc12g'
+            videoUrl: 'https://youtu.be/kkfoxrcMs-E'
         }
 };
 
