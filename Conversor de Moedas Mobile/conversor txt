@@ -1,0 +1,19 @@
+Conversor de Moedas Mobile
+Um aplicativo React Native moderno e elegante para conversão de moedas em tempo real. Desenvolvido com Expo SDK 53, o app oferece uma interface intuitiva e responsiva para converter entre 150+ moedas diferentes.
+Funcionalidades Principais
+Conversão em Tempo Real: Busca taxas de câmbio atualizadas da API AwesomeAPI
+150+ Moedas: Suporte para moedas populares como USD, EUR, BRL, GBP, JPY, CAD, AUD, CHF, CNY, INR
+Interface Moderna: Design dark mode com cards elegantes e navegação fluida
+Fallback Inteligente: Sistema de taxas simuladas quando a API está indisponível
+Busca Rápida: Modal para seleção rápida de moedas com nomes e símbolos
+Histórico de Atualizações: Exibe quando as taxas foram atualizadas pela última vez
+Tecnologias Utilizadas
+React Native 0.79.5 com Expo SDK 53
+TypeScript para tipagem estática
+API AwesomeAPI para taxas de câmbio
+Design System próprio com componentes reutilizáveis
+Metro Bundler para desenvolvimento otimizado
+Arquitetura
+O app utiliza uma arquitetura modular com hooks personalizados para gerenciamento de estado, componentes funcionais com TypeScript, e um sistema de fallback robusto que garante funcionamento offline. A interface é totalmente responsiva e segue as melhores práticas de UX mobile.
+
+https://youtube.com/shorts/vh_sg01Gp3M

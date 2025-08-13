@@ -1,0 +1,25 @@
+Biblioteca Digital é um aplicativo móvel completo para download de livros em PDF, desenvolvido com tecnologias modernas e arquitetura robusta. O projeto consiste em um backend Node.js com Express que gerencia uma API RESTful para autenticação de usuários, gerenciamento de livros e sistema de downloads. O frontend é construído em React Native com Expo, oferecendo uma interface nativa para Android e iOS com navegação por tabs, telas de login/registro, busca de livros, visualização de detalhes e download direto dos PDFs. O sistema utiliza MySQL como banco de dados principal, com autenticação JWT segura, criptografia de senhas com bcrypt, e um sistema de uploads que organiza os arquivos em pastas estruturadas. A aplicação inclui funcionalidades como paginação de resultados, filtros de busca, contadores de download, e um sistema de usuários com perfis personalizáveis. O projeto foi arquitetado seguindo boas práticas de desenvolvimento, com separação clara entre camadas (controllers, models, routes), middleware de autenticação, validação de dados, e tratamento de erros robusto. A interface do usuário foi projetada com foco na experiência mobile, incluindo componentes reutilizáveis, contextos para gerenciamento de estado, e navegação intuitiva entre as diferentes seções do app.
+
+video youtube: https://youtu.be/Ly66MVUc12g
+
+🛠️ Ferramentas Utilizadas:
+Frontend:
+React Native, Expo, TypeScript, React Navigation
+Backend:
+Node.js, Express, MySQL, JWT, bcrypt, Multer
+Banco:
+MySQL
+Dev Tools:
+Git, GitHub, npm, Nodemon
+Arquitetura:
+MVC, REST API, Middleware
+Segurança:
+JWT, bcrypt, CORS, Validation
+Mobile:
+Android, iOS, Touch Gestures
+Uploads:
+File System, Static Serving
+Estado:
+Context API, Hooks
+Validação:
+express-validator, Input Validation
