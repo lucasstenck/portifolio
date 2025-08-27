@@ -1,0 +1,45 @@
+Sistema de Avaliação de Segurança Cibernética NIST - Descrição Completa
+Este é um sistema web completo e profissional para avaliação de segurança cibernética baseado no framework NIST (National Institute of Standards and Technology), desenvolvido especificamente para empresas de consultoria em cibersegurança. O projeto representa uma solução robusta que transforma questionários manuais em planilhas em uma plataforma digital automatizada e profissional.
+Funcionalidades Principais:
+Frontend para Clientes:
+Interface responsiva e moderna para preenchimento de questionários de segurança
+Sistema de progresso visual com validação em tempo real
+Prévia automática do relatório (páginas 1 e 2) após conclusão
+Design personalizável com logo e identidade visual da empresa
+Painel Administrativo:
+Dashboard completo com estatísticas e métricas em tempo real
+Gestão de clientes e avaliações
+Sistema de usuários com diferentes níveis de permissão
+Controle de acesso baseado em roles (Admin, Admin Master, Gerente de Downloads)
+Sistema de Relatórios:
+Geração automática de relatórios em PDF e Word DOCX
+Conversores integrados usando Puppeteer (Node.js) e PhpWord
+Relatórios editáveis para personalização pela equipe
+Dashboards analíticos com gráficos e visualizações
+Tecnologias Utilizadas:
+Backend:
+PHP 7.4+ com arquitetura MVC
+MySQL/MariaDB para armazenamento de dados
+Composer para gerenciamento de dependências PHP
+Bibliotecas especializadas: PhpWord, Spatie Browsershot
+Frontend:
+HTML5, CSS3 com design responsivo
+JavaScript vanilla com Chart.js para gráficos
+Sistema de temas dinâmicos e personalização visual
+Conversores:
+Node.js com Puppeteer para conversão HTML para PDF
+PHP com PhpWord para conversão HTML para Word DOCX
+Spatie Browsershot para renderização de páginas web
+Infraestrutura:
+Compatível com XAMPP, WAMP e servidores Linux
+Sistema de logs de atividade e auditoria
+Backup automático e restauração de dados
+Arquitetura do Sistema:
+O sistema possui 11 tabelas principais no banco de dados, incluindo gestão de usuários, clientes, avaliações, respostas, configurações da empresa e logs de atividade. A estrutura modular permite fácil manutenção e expansão de funcionalidades.
+Casos de Uso:
+Para Consultores: Acesso completo ao painel administrativo para gerenciar clientes, visualizar resultados e gerar relatórios personalizados
+Para Clientes: Preenchimento online de questionários com feedback imediato e prévia dos resultados
+Para Equipes: Download de relatórios completos em formatos editáveis para finalização e envio
+Valor Comercial:
+Este sistema representa uma solução enterprise completa que elimina a necessidade de processos manuais, padroniza a entrega de serviços e profissionaliza a apresentação de relatórios de segurança cibernética. A automação permite maior eficiência operacional e qualidade consistente nos serviços prestados.
+O projeto está totalmente funcional e pronto para produção, com documentação completa de instalação e configuração para ambiente XAMPP ou servidores web similares.  video: https://youtu.be/Uuh5snwewJI

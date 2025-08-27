@@ -84,27 +84,41 @@ const projectsData = {
         images: ['Reforço Online/1.png', 'Reforço Online/2.png', 'Reforço Online/3.png', 'Reforço Online/4.png', 'Reforço Online/5.png', 'Reforço Online/6.png', 'Reforço Online/7.png', 'Reforço Online/8.png', 'Reforço Online/9.png', 'Reforço Online/10.png', 'Reforço Online/11.png', 'Reforço Online/12.png', 'Reforço Online/13.png', 'Reforço Online/14.png', 'Reforço Online/15.png', 'Reforço Online/16.png', 'Reforço Online/17.png', 'Reforço Online/18.png'],
         videoUrl: 'https://youtu.be/GWz9RJ-Kx9U'
     },
-        'conversor-de-moedas-mobile': {
-            title: 'Conversor de Moedas Mobile',
-            description: 'Aplicativo React Native para conversão de moedas em tempo real com 150+ moedas. Interface moderna com design dark mode, taxas atualizadas via API e sistema de fallback para funcionamento offline.',
-            technologies: ['React Native', 'Expo', 'TypeScript', 'API AwesomeAPI'],
-            images: ['Conversor de Moedas Mobile/1.jfif', 'Conversor de Moedas Mobile/2.jfif', 'Conversor de Moedas Mobile/3.jfif'],
-            videoUrl: 'https://youtube.com/shorts/vh_sg01Gp3M'
-        },
-        'fit-21-dias': {
-            title: 'Projeto 21 Fit Dias',
-            description: 'Plataforma de transformação física com resultados comprovados em 21 dias. Sistema de acompanhamento visual com fotos antes/depois, métricas de progresso, cronograma estruturado e interface responsiva moderna.',
-            technologies: ['React', 'TypeScript', 'Node.js', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
-            images: ['Projeto Fit 21 Dias/1.png', 'Projeto Fit 21 Dias/2.png', 'Projeto Fit 21 Dias/3.png', 'Projeto Fit 21 Dias/2.png', 'Projeto Fit 21 Dias/5.png', 'Projeto Fit 21 Dias/6.png', 'Projeto Fit 21 Dias/7.png', 'Projeto Fit 21 Dias/8.png', 'Projeto Fit 21 Dias/9.png', 'Projeto Fit 21 Dias/10.png', 'Projeto Fit 21 Dias/11.png', 'Projeto Fit 21 Dias/12.png', 'Projeto Fit 21 Dias/13.png'],
-            videoUrl: 'https://youtu.be/HbrZEmRxAcM'
-        },
-        'biblioteca-digital': {
-            title: 'Biblioteca Digital',
-            description: 'Aplicativo móvel completo para download de livros em PDF. Backend Node.js com Express e MySQL, frontend React Native com Expo. Sistema de autenticação JWT, busca de livros, downloads e interface mobile responsiva para Android e iOS.',
-            technologies: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'JWT'],
-            images: ['Biblioteca Digital/1.png', 'Biblioteca Digital/2.png', 'Biblioteca Digital/3.png', 'Biblioteca Digital/4.png', 'Biblioteca Digital/5.png', 'Biblioteca Digital/6.png', 'Biblioteca Digital/7.png', 'Biblioteca Digital/8.png', 'Biblioteca Digital/9.png', 'Biblioteca Digital/10.png', 'Biblioteca Digital/11.png', 'Biblioteca Digital/12.png'],
-            videoUrl: 'https://youtu.be/kkfoxrcMs-E'
-        }
+    'conversor-de-moedas-mobile': {
+        title: 'Conversor de Moedas Mobile',
+        description: 'Aplicativo React Native para conversão de moedas em tempo real com 150+ moedas. Interface moderna com design dark mode, taxas atualizadas via API e sistema de fallback para funcionamento offline.',
+        technologies: ['React Native', 'Expo', 'TypeScript', 'API AwesomeAPI'],
+        images: ['Conversor de Moedas Mobile/1.jfif', 'Conversor de Moedas Mobile/2.jfif', 'Conversor de Moedas Mobile/3.jfif'],
+        videoUrl: 'https://youtube.com/shorts/vh_sg01Gp3M'
+    },
+    'fit-21-dias': {
+        title: 'Projeto 21 Fit Dias',
+        description: 'Plataforma de transformação física com resultados comprovados em 21 dias. Sistema de acompanhamento visual com fotos antes/depois, métricas de progresso, cronograma estruturado e interface responsiva moderna.',
+        technologies: ['React', 'TypeScript', 'Node.js', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
+        images: ['Projeto Fit 21 Dias/1.png', 'Projeto Fit 21 Dias/2.png', 'Projeto Fit 21 Dias/3.png', 'Projeto Fit 21 Dias/5.png', 'Projeto Fit 21 Dias/6.png', 'Projeto Fit 21 Dias/7.png', 'Projeto Fit 21 Dias/8.png', 'Projeto Fit 21 Dias/9.png', 'Projeto Fit 21 Dias/10.png', 'Projeto Fit 21 Dias/11.png', 'Projeto Fit 21 Dias/12.png', 'Projeto Fit 21 Dias/13.png'],
+        videoUrl: 'https://youtu.be/HbrZEmRxAcM'
+    },
+    'biblioteca-digital': {
+        title: 'Biblioteca Digital',
+        description: 'Aplicativo móvel completo para download de livros em PDF. Backend Node.js com Express e MySQL, frontend React Native com Expo. Sistema de autenticação JWT, busca de livros, downloads e interface mobile responsiva para Android e iOS.',
+        technologies: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'JWT'],
+        images: ['Biblioteca Digital/1.png', 'Biblioteca Digital/2.png', 'Biblioteca Digital/3.png', 'Biblioteca Digital/4.png', 'Biblioteca Digital/5.png', 'Biblioteca Digital/6.png', 'Biblioteca Digital/7.png', 'Biblioteca Digital/8.png', 'Biblioteca Digital/9.png', 'Biblioteca Digital/10.png', 'Biblioteca Digital/11.png', 'Biblioteca Digital/12.png'],
+        videoUrl: 'https://youtu.be/kkfoxrcMs-E'
+    },
+    'primecar': {
+        title: 'PrimeCar',
+        description: 'Plataforma completa de marketplace automotivo desenvolvida em React.js e Node.js. Sistema de anúncios com upload de imagens, filtros avançados de busca, chat em tempo real com Socket.io, painel administrativo e autenticação JWT. Ideal para concessionárias e plataformas de compra e venda de veículos.',
+        technologies: ['React.js', 'Node.js', 'Express', 'Socket.io', 'SQLite', 'JWT', 'Multer'],
+        images: ['PrimeCar/1.png', 'PrimeCar/2.png', 'PrimeCar/3.png', 'PrimeCar/4.png', 'PrimeCar/5.png', 'PrimeCar/6.png', 'PrimeCar/7.png', 'PrimeCar/8.png', 'PrimeCar/9.png', 'PrimeCar/10.png'],
+        videoUrl: 'https://youtu.be/pngSHrCa5Ik'
+    },
+    'sistema-avaliacao-seguranca': {
+        title: 'Sistema de Avaliação de Segurança',
+        description: 'Sistema web completo e profissional para avaliação de segurança cibernética baseado no framework NIST. Desenvolvido para empresas de consultoria em cibersegurança, transforma questionários manuais em planilhas em uma plataforma digital automatizada. Inclui frontend responsivo para clientes, painel administrativo completo, sistema de relatórios em PDF/DOCX e dashboards analíticos.',
+        technologies: ['PHP', 'MySQL', 'JavaScript', 'Node.js', 'Puppeteer', 'PhpWord', 'Chart.js'],
+        images: ['Sistema de Avaliacao de Seguranca/1.png', 'Sistema de Avaliacao de Seguranca/2.png', 'Sistema de Avaliacao de Seguranca/3.png', 'Sistema de Avaliacao de Seguranca/4.png', 'Sistema de Avaliacao de Seguranca/5.png', 'Sistema de Avaliacao de Seguranca/6.png', 'Sistema de Avaliacao de Seguranca/7.png', 'Sistema de Avaliacao de Seguranca/8.png', 'Sistema de Avaliacao de Seguranca/9.png'],
+        videoUrl: 'https://youtu.be/Uuh5snwewJI'
+    }
 };
 
 // Função para extrair ID do YouTube da URL
@@ -288,13 +302,11 @@ window.addEventListener('click', (event) => {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(0, 0, 0, 0.99)';
-        header.style.boxShadow = '0 4px 25px rgba(59, 130, 246, 0.2)';
-        header.style.borderBottom = '2px solid rgba(59, 130, 246, 0.3)';
+        header.style.background = 'rgba(10, 10, 10, 0.99)';
+        header.style.borderBottom = '1px solid #3b82f6';
     } else {
-        header.style.background = 'rgba(0, 0, 0, 0.98)';
-        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
-        header.style.borderBottom = '2px solid rgba(59, 130, 246, 0.2)';
+        header.style.background = 'rgba(10, 10, 10, 0.95)';
+        header.style.borderBottom = '1px solid #1f2937';
     }
 });
 
@@ -323,155 +335,4 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
-});
-
-// Adicionar estilos CSS para o modal de imagem
-const imageModalStyles = `
-    .image-modal {
-        position: fixed;
-        z-index: 3000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .image-modal-content {
-        position: relative;
-        max-width: 90%;
-        max-height: 90%;
-    }
-    
-    .image-modal-content img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    
-    .image-close {
-        position: absolute;
-        top: -40px;
-        right: 0;
-        color: white;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .project-modal-content h2 {
-        color: #333;
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-    
-    .project-description {
-        color: #666;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-        font-size: 1.1rem;
-    }
-    
-    .project-details {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .project-tech-stack h4,
-    .project-features h4 {
-        color: #667eea;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-    }
-    
-    .tech-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-    
-    .tech-tag {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 0.3rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
-    
-    .project-features ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .project-features li {
-        padding: 0.5rem 0;
-        color: #666;
-        position: relative;
-        padding-left: 1.5rem;
-    }
-    
-    .project-features li::before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: #667eea;
-        font-weight: bold;
-    }
-    
-    .project-gallery,
-    .project-video {
-        margin-top: 2rem;
-    }
-    
-    .project-gallery h4,
-    .project-video h4 {
-        color: #667eea;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-    }
-    
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-    }
-    
-    .gallery-item img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
-    
-    .gallery-item img:hover {
-        transform: scale(1.05);
-    }
-    
-    .project-video video {
-        width: 100%;
-        border-radius: 10px;
-    }
-    
-    @media (max-width: 768px) {
-        .project-details {
-            grid-template-columns: 1fr;
-        }
-        
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        }
-    }
-`;
-
-// Adicionar estilos ao head
-const styleSheet = document.createElement('style');
-styleSheet.textContent = imageModalStyles;
-document.head.appendChild(styleSheet); 
+}); 

@@ -1,0 +1,27 @@
+Plataforma de Compra e Venda de Carros
+Sistema completo de marketplace automotivo desenvolvido em React.js e Node.js com funcionalidades avançadas de chat em tempo real. A plataforma permite que usuários criem anúncios detalhados de veículos com até 5 fotos, sistema de filtros por marca, modelo, preço e cidade, e chat integrado para comunicação direta entre compradores e vendedores.
+Funcionalidades Principais:
+Sistema de autenticação com JWT
+Criação e gerenciamento de anúncios
+Upload de imagens com Multer
+Sistema de aprovação de anúncios (admin)
+Chat em tempo real com Socket.io
+Filtros avançados de busca
+Painel administrativo completo
+Notificações em tempo real
+Interface responsiva e moderna
+Tecnologias:
+Frontend: React.js, Socket.io-client, CSS3
+Backend: Node.js, Express, SQLite3
+Real-time: Socket.io
+Autenticação: JWT, bcrypt
+Upload: Multer
+Banco: SQLite com tabelas para usuários, anúncios, fotos e mensagens
+Recursos do Chat:
+Conversas privadas entre usuários
+Mensagens em tempo real
+Notificações visuais
+Histórico de conversas
+Status de leitura das mensagens
+Interface intuitiva com modal dedicado
+Ideal para concessionárias, lojas de carros usados ou plataformas de marketplace automotivo que precisam de comunicação direta entre compradores e vendedores.     video youtube: https://youtu.be/pngSHrCa5Ik
