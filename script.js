@@ -112,13 +112,20 @@ const projectsData = {
         images: ['PrimeCar/1.png', 'PrimeCar/2.png', 'PrimeCar/3.png', 'PrimeCar/4.png', 'PrimeCar/5.png', 'PrimeCar/6.png', 'PrimeCar/7.png', 'PrimeCar/8.png', 'PrimeCar/9.png', 'PrimeCar/10.png'],
         videoUrl: 'https://youtu.be/pngSHrCa5Ik'
     },
-    'sistema-avaliacao-seguranca': {
-        title: 'Sistema de Avaliação de Segurança',
-        description: 'Sistema web completo e profissional para avaliação de segurança cibernética baseado no framework NIST. Desenvolvido para empresas de consultoria em cibersegurança, transforma questionários manuais em planilhas em uma plataforma digital automatizada. Inclui frontend responsivo para clientes, painel administrativo completo, sistema de relatórios em PDF/DOCX e dashboards analíticos.',
-        technologies: ['PHP', 'MySQL', 'JavaScript', 'Node.js', 'Puppeteer', 'PhpWord', 'Chart.js'],
-        images: ['Sistema de Avaliacao de Seguranca/1.png', 'Sistema de Avaliacao de Seguranca/2.png', 'Sistema de Avaliacao de Seguranca/3.png', 'Sistema de Avaliacao de Seguranca/4.png', 'Sistema de Avaliacao de Seguranca/5.png', 'Sistema de Avaliacao de Seguranca/6.png', 'Sistema de Avaliacao de Seguranca/7.png', 'Sistema de Avaliacao de Seguranca/8.png', 'Sistema de Avaliacao de Seguranca/9.png'],
-        videoUrl: 'https://youtu.be/Uuh5snwewJI'
-    }
+            'sistema-avaliacao-seguranca': {
+            title: 'Sistema de Avaliação de Segurança',
+            description: 'Sistema web completo e profissional para avaliação de segurança cibernética baseado no framework NIST. Desenvolvido para empresas de consultoria em cibersegurança, transforma questionários manuais em planilhas em uma plataforma digital automatizada. Inclui frontend responsivo para clientes, painel administrativo completo, sistema de relatórios em PDF/DOCX e dashboards analíticos.',
+            technologies: ['PHP', 'MySQL', 'JavaScript', 'Node.js', 'Puppeteer', 'PhpWord', 'Chart.js'],
+            images: ['Sistema de Avaliacao de Seguranca/1.png', 'Sistema de Avaliacao de Seguranca/2.png', 'Sistema de Avaliacao de Seguranca/3.png', 'Sistema de Avaliacao de Seguranca/4.png', 'Sistema de Avaliacao de Seguranca/5.png', 'Sistema de Avaliacao de Seguranca/6.png', 'Sistema de Avaliacao de Seguranca/7.png', 'Sistema de Avaliacao de Seguranca/8.png', 'Sistema de Avaliacao de Seguranca/9.png'],
+            videoUrl: 'https://youtu.be/Uuh5snwewJI'
+        },
+        'loterias-inteligente': {
+            title: 'Loterias Inteligente',
+            description: 'Aplicativo mobile completo para estratégias de loterias utilizando React Native com Expo. Suporta 8 modalidades de loterias (Mega-Sena, Lotofácil, Quina, Dupla Sena, Lotomania, Timemania, Mais Milionária e Dia de Sorte) com geradores inteligentes baseados em estatísticas, sistema de desdobramentos para aumentar chances de acerto, histórico personalizado de apostas e análise de frequência dos números mais sorteados. Integra Firebase para sincronização em tempo real, autenticação Google OAuth, e sistema de assinaturas PRO com Google Play Billing.',
+            technologies: ['React Native', 'Expo', 'Firebase', 'JavaScript', 'Firestore', 'Google OAuth', 'Google Play Billing'],
+            images: ['Loterias Inteligente/1.png', 'Loterias Inteligente/2.png', 'Loterias Inteligente/3.png', 'Loterias Inteligente/4.png', 'Loterias Inteligente/5.png', 'Loterias Inteligente/6.png', 'Loterias Inteligente/7.png', 'Loterias Inteligente/8.png', 'Loterias Inteligente/9.png', 'Loterias Inteligente/10.png', 'Loterias Inteligente/11.png', 'Loterias Inteligente/12.png'],
+            videoUrl: 'https://www.youtube.com/watch?v=g6Z1GHJCsk8'
+        }
 };
 
 // Função para extrair ID do YouTube da URL
