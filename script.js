@@ -114,10 +114,10 @@ const projectsData = {
     },
             'sistema-avaliacao-seguranca': {
             title: 'Sistema de Avaliação de Segurança',
-            description: 'Sistema web completo e profissional para avaliação de segurança cibernética baseado no framework NIST. Desenvolvido para empresas de consultoria em cibersegurança, transforma questionários manuais em planilhas em uma plataforma digital automatizada. Inclui frontend responsivo para clientes, painel administrativo completo, sistema de relatórios em PDF/DOCX e dashboards analíticos.',
-            technologies: ['PHP', 'MySQL', 'JavaScript', 'Node.js', 'Puppeteer', 'PhpWord', 'Chart.js'],
+            description: 'Plataforma web completa para avaliação NIST CSF com painel administrativo. Possui criação/edição de avaliações por funções e subcategorias, cálculo de pontuações e maturidade, gestão de clientes, relatórios com gráficos (linha, radar, pizza, barras) e exportação CSV/PDF/DOCX, dashboard com temas, LGPD com editor e sincronização em banco/arquivo, configurações visuais (cores, fontes, rodapé), permissões por usuário e frontend público com validações.',
+            technologies: ['PHP', 'PDO', 'MySQL', 'Composer', 'Chart.js', 'Spatie Browsershot', 'PHPWord', 'Node.js', 'JavaScript', 'HTML5', 'CSS3'],
             images: ['Sistema de Avaliacao de Seguranca/1.png', 'Sistema de Avaliacao de Seguranca/2.png', 'Sistema de Avaliacao de Seguranca/3.png', 'Sistema de Avaliacao de Seguranca/4.png', 'Sistema de Avaliacao de Seguranca/5.png', 'Sistema de Avaliacao de Seguranca/6.png', 'Sistema de Avaliacao de Seguranca/7.png', 'Sistema de Avaliacao de Seguranca/8.png', 'Sistema de Avaliacao de Seguranca/9.png'],
-            videoUrl: 'https://youtu.be/Uuh5snwewJI'
+            videoUrl: 'https://youtu.be/gxftCiJzoHU'
         },
         'loterias-inteligente': {
             title: 'Loterias Inteligente',
