@@ -125,6 +125,13 @@ const projectsData = {
             technologies: ['React Native', 'Expo', 'Firebase', 'JavaScript', 'Firestore', 'Google OAuth', 'Google Play Billing'],
             images: ['Loterias Inteligente/1.png', 'Loterias Inteligente/2.png', 'Loterias Inteligente/3.png', 'Loterias Inteligente/4.png', 'Loterias Inteligente/5.png', 'Loterias Inteligente/6.png', 'Loterias Inteligente/7.png', 'Loterias Inteligente/8.png', 'Loterias Inteligente/9.png', 'Loterias Inteligente/10.png', 'Loterias Inteligente/11.png', 'Loterias Inteligente/12.png'],
             videoUrl: 'https://www.youtube.com/watch?v=g6Z1GHJCsk8'
+        },
+        'voebarato': {
+            title: 'VoeBarato',
+            description: 'MVP mobile para monitoramento de passagens: autenticação com JWT, busca de voos com ida/volta e data BR, criação de alertas de preço, histórico e deep links para ofertas.',
+            technologies: ['Python', 'FastAPI', 'React Native', 'Expo', 'TypeScript', 'SQLite', 'SQLAlchemy', 'JWT', 'Docker'],
+            images: ['VoeBarato/1.png', 'VoeBarato/2.png', 'VoeBarato/3.png'],
+            videoUrl: 'https://youtube.com/shorts/J3yDT7pPxDQ'
         }
 };
 
