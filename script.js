@@ -132,6 +132,13 @@ const projectsData = {
             technologies: ['Python', 'FastAPI', 'React Native', 'Expo', 'TypeScript', 'SQLite', 'SQLAlchemy', 'JWT', 'Docker'],
             images: ['VoeBarato/1.png', 'VoeBarato/2.png', 'VoeBarato/3.png'],
             videoUrl: 'https://youtube.com/shorts/J3yDT7pPxDQ'
+        },
+        'dashboard-b3': {
+            title: 'Dashboard Executivo B3',
+            description: 'Painel executivo com KPIs de mercado (B3), análise de carteira, gráficos dinâmicos e filtros por período/ativo. Exportação de relatórios e atualização automática de dados.',
+            technologies: ['Python', 'Pandas', 'React', 'Chart.js', 'Node.js'],
+            images: ['formal.png'],
+            videoUrl: 'https://youtu.be/QbSPUfqbJdA'
         }
 };
 

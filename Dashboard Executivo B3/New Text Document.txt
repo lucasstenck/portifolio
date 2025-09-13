@@ -1,0 +1,30 @@
+Sistema que coleta dados de ações da B3 e gera um relatório Excel executivo com dashboard, KPIs e abas por ativo. Suporta seleção de período brasileiro (ddmmaaaa), cálculo de indicadores (SMA, RSI, MACD, volatilidade), gráficos dinâmicos e consolidação dos fechamentos em Prices_Consolidated. Inclui interface gráfica (tkinter) e build para .exe com ícone próprio.
+Como funciona
+Entrada tickers (ex. PETR4,VALE3,ITUB4) e datas.
+Coleta
+Yahoo Finance (yfinance) preços ajustados OHLCV, eventos.
+Fundamentus (requests + pandas.read_html) dados fundamentalistas.
+Processamento
+Limpeza e tipagem (pandas), janelas móveis, indicadores técnicos, retorno 1D5D21D, YTD, vol 20d.
+Consolidação robusta por outer join + reindex + ffillbfill para evitar NaN.
+Excel (xlsxwriter via pandas.ExcelWriter)
+Aba Prices_Consolidated com heatmap e resumo de retornos.
+Abas Data_TICKER com mini‑dashboard candlestick, volume, RSI, MACD, retorno mensal, donut Alta x Baixa e KPIs.
+Datas em ddmmaaaa, congelamento de painéis, estilos corporativos e navegação.
+GUI
+tkinter com campos de data BR, botão Gerar Excel, logs em tempo real, modo Debug e reabilitação automática do botão.
+StackTecnologias
+Python 3.x
+pandas, numpy
+yfinance
+requests, lxml, BeautifulSoup opcional (via pandas.read_html)
+XlsxWriter
+tkinter
+PyInstaller (empacotamento .exe com logo.ico)
+Logging com níveis e mensagens detalhadas
+Entrega
+Scripts principais gerador_relatorio_b3.py, gui_dashboard_b3.py
+Executável Windows (.exe) com ícone próprio
+Relatório Excel profissional pronto para decisão executiva
+
+https://www.youtube.com/watch?v=M0k4gUP78fY&feature=youtu.be

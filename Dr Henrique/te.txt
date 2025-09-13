@@ -1,0 +1,43 @@
+Sistema de Agendamento Odontológico com WhatsApp Bot
+Visão Geral:
+Sistema completo de agendamento odontológico que integra um bot inteligente no WhatsApp com backend PHP e interface web moderna.
+�� Ferramentas e Tecnologias:
+Frontend:
+HTML5 + CSS3 (design branco/azul responsivo)
+JavaScript para interações dinâmicas
+Interface web para visualização de agendamentos
+Backend:
+PHP 8+ com PDO para banco de dados
+MySQL para armazenamento de dados
+API REST para comunicação com o bot
+Bot WhatsApp:
+Python 3.9 + Flask
+Twilio API para WhatsApp
+Google Cloud Run para hospedagem
+ngrok para túnel local
+Infraestrutura:
+XAMPP (servidor local)
+Google Cloud Platform
+GitHub para versionamento
+⚡ Funcionalidades Principais:
+1. Bot WhatsApp Inteligente:
+100+ FAQs sobre tratamentos odontológicos
+Fluxo de agendamento completo (nome, email, CPF, telefone, horário)
+Sistema de cancelamento de consultas
+Validação robusta de dados
+Comandos globais (menu, versão, cancelar)
+2. Sistema de Agendamento:
+Horários disponíveis em tempo real
+Validação de CPF, email e telefone
+Confirmação automática via WhatsApp
+Integração com banco de dados
+3. Painel Administrativo:
+Visualização de todos os agendamentos
+Filtros por data e busca por dados do paciente
+Design responsivo e moderno
+Estatísticas em tempo real
+4. API REST:
+Endpoints para listar horários disponíveis
+Criação e cancelamento de agendamentos
+Validação de dados do paciente
+Respostas JSON estruturadas        https://youtu.be/J7npgO-mUIY
