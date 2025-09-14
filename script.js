@@ -135,10 +135,17 @@ const projectsData = {
         },
         'dashboard-b3': {
             title: 'Dashboard Executivo B3',
-            description: 'Painel executivo com KPIs de mercado (B3), análise de carteira, gráficos dinâmicos e filtros por período/ativo. Exportação de relatórios e atualização automática de dados.',
-            technologies: ['Python', 'Pandas', 'React', 'Chart.js', 'Node.js'],
-            images: ['formal.png'],
-            videoUrl: 'https://youtu.be/QbSPUfqbJdA'
+            description: 'Coleta de dados da B3 com yfinance e Fundamentus, indicadores (SMA, RSI, MACD, volatilidade) e geração de relatório Excel executivo com KPIs e abas por ativo. GUI em tkinter e build .exe com PyInstaller.',
+            technologies: ['Python', 'Pandas', 'NumPy', 'yfinance', 'Requests', 'XlsxWriter', 'tkinter', 'PyInstaller'],
+            images: ['Dashboard Executivo B3/1.png', 'Dashboard Executivo B3/2.png', 'Dashboard Executivo B3/3.png', 'Dashboard Executivo B3/4.png', 'Dashboard Executivo B3/5.png', 'Dashboard Executivo B3/6.png', 'Dashboard Executivo B3/7.png', 'Dashboard Executivo B3/8.png'],
+            videoUrl: 'https://www.youtube.com/watch?v=M0k4gUP78fY'
+        },
+        'dr-henrique': {
+            title: 'Dr Henrique',
+            description: 'Sistema de agendamento odontológico com bot WhatsApp: frontend web responsivo, backend PHP/MySQL com API REST e bot Python/Flask via Twilio (deploy em Google Cloud Run).',
+            technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Python', 'Flask', 'Twilio', 'Google Cloud'],
+            images: ['Dr Henrique/1.png', 'Dr Henrique/2.png', 'Dr Henrique/3.png', 'Dr Henrique/4.png', 'Dr Henrique/5.png', 'Dr Henrique/6.png', 'Dr Henrique/7.png', 'Dr Henrique/8.png', 'Dr Henrique/9.png'],
+            videoUrl: 'https://youtu.be/J7npgO-mUIY'
         }
 };
 
