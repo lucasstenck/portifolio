@@ -146,6 +146,13 @@ const projectsData = {
             technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Python', 'Flask', 'Twilio', 'Google Cloud'],
             images: ['Dr Henrique/1.png', 'Dr Henrique/2.png', 'Dr Henrique/3.png', 'Dr Henrique/4.png', 'Dr Henrique/5.png', 'Dr Henrique/6.png', 'Dr Henrique/7.png', 'Dr Henrique/8.png', 'Dr Henrique/9.png'],
             videoUrl: 'https://youtu.be/J7npgO-mUIY'
+        },
+        'landing-page': {
+            title: 'Landing Page — Curso de Tráfego Pago',
+            description: 'LP preto/branco com detalhes em vermelho focada em conversão: captação (PHP + PDO MySQL), urgência (contador por visitante), modal de intenção de saída, depoimentos autoindexados (fotos e vídeos), SEO/OG e AOS.',
+            technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'AOS'],
+            images: ['landing-page/1.png', 'landing-page/2.png', 'landing-page/3.png', 'landing-page/4.png', 'landing-page/5.png', 'landing-page/6.png', 'landing-page/7.png', 'landing-page/8.png', 'landing-page/9.png', 'landing-page/10.png'],
+            videoUrl: 'https://youtu.be/2Afiq1OzmEA'
         }
 };
 

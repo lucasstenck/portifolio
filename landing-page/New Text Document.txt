@@ -1,0 +1,17 @@
+Projeto: Landing page de alta conversão (preto/branco com detalhes em vermelho) para Curso de Tráfego Pago.
+Como funciona
+index.php: renderiza toda a página e as seções (hero, dor, solução, benefícios, prova, autor, módulos, oferta, garantia, FAQ) com metas OG e AOS.
+Captação de leads: formulário envia via POST para lead.php. O PHP valida (nome/e‑mail/WhatsApp), grava no MySQL com PDO (prepared statements) e retorna JSON. Restrições: chave única (email, phone).
+Urgência: contador regressivo (3h por visitante via localStorage), CTA flutuante, modal de captura por intenção de saída (mousemove topo) com fallback em 45s.
+Depoimentos:
+Fotos: slider responsivo com scroll-snap e botões. O PHP lista automaticamente somente arquivos em assets/img que sigam “depoimento foto (N).jpg|png|webp”, ordena por N, deduplica e codifica URLs.
+Vídeos: grade 16:9; PHP lista “depoimento video (N).mp4|webm|ogg|mov” em assets/videos, também ordena e deduplica.
+Personalização: parâmetro ?n=Nome ajusta a headline.
+Responsividade: CSS define proporções fixas (fotos 9:16; vídeos 16:9) com widths por clamp, grids auto-fit e scroll suave no slider.
+Ferramentas
+HTML5, CSS3 (layout, responsividade), JavaScript puro (contador, modal, slider, AJAX).
+PHP 8+ (PDO MySQL) e MySQL 5/8.
+phpMyAdmin para importar database.sql (cria DB trafegopro e tabela leads).
+AOS para animações on‑scroll. 
+
+video: https://youtu.be/2Afiq1OzmEA
