@@ -153,6 +153,13 @@ const projectsData = {
             technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'AOS'],
             images: ['landing-page/1.png', 'landing-page/2.png', 'landing-page/3.png', 'landing-page/4.png', 'landing-page/5.png', 'landing-page/6.png', 'landing-page/7.png', 'landing-page/8.png', 'landing-page/9.png', 'landing-page/10.png'],
             videoUrl: 'https://youtu.be/2Afiq1OzmEA'
+        },
+        'highlow-mt5': {
+            title: 'HighLow S/R (MT5)',
+            description: 'Indicador técnico para MetaTrader 5 (MQL5) que detecta pivôs, identifica rompimentos e desenha zonas de suporte/resistência rompidas, com alertas (popup/som/push) e cálculo incremental para performance.',
+            technologies: ['MQL5', 'MetaTrader 5', 'Indicator Buffers', 'Objects API'],
+            images: ['Projeto HighLow_S-R (MT5)/1.png', 'Projeto HighLow_S-R (MT5)/2.png', 'Projeto HighLow_S-R (MT5)/3.png', 'Projeto HighLow_S-R (MT5)/4.png', 'Projeto HighLow_S-R (MT5)/5.png'],
+            videoUrl: 'https://youtu.be/4TdvNdjdTtA'
         }
 };
 

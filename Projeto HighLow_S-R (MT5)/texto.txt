@@ -1,0 +1,18 @@
+Indicador técnico em MQL5 para MetaTrader 5 que identifica pivôs (topos/fundos), detecta rompimentos e desenha “zonas” de suporte/resistência rompidas, com alertas configuráveis.
+Principais funcionalidades
+Detecção de pivôs: lógica de fractais (2 velas à esquerda e 2 à direita) para marcar máximas/mínimas relevantes.
+Rompimentos: busca, a partir do pivô, candles que superem a máxima/mínima dentro de N barras (parâmetro bars).
+Zonas visuais: cria retângulos no gráfico (Aqua para resistência rompida; Yellow para suporte rompido) com altura ajustável (ZoneHeightPoints) e estilo/borda configuráveis.
+Continuidade de tendência: marca setas adicionais após o rompimento (dn para altas, up para baixas) até perda de momentum.
+Alertas: popup, som (arquivo configurável), push notification; anti-repique (apenas nova barra, janela recente e deduplicação por chave do evento).
+Logs e debug: impressão no Experts/Diário (EnableLogs, LogEveryTick), overlay opcional no gráfico com contadores de pivôs/rompimentos.
+Robustez: redimensionamento de buffers, “bounds checks” e limpeza controlada evitam erros “array out of range”. Cálculo incremental para performance.
+Tecnologias e ferramentas
+Linguagem: MQL5 (C-like).
+Plataforma/IDE: MetaTrader 5 e MetaEditor 5 (compila para .ex5).
+APIs usadas: Indicator Buffers (SetIndexBuffer, PlotIndexSet*), séries de preços, objetos gráficos (ObjectCreate/ObjectSetInteger para OBJ_RECTANGLE), utilidades de gráfico (ChartSetInteger), notificações (Alert, PlaySound, SendNotification), logging (Print), overlay (Comment).
+Arquitetura do código
+Eventos: OnInit (mapeia buffers e estilo), OnCalculate (lógica de pivô/rompimento/alertas), OnDeinit (limpa objetos).
+Buffers: high_, low_ (pivôs), dn, up (continuação).
+
+video: https://youtu.be/4TdvNdjdTtA
