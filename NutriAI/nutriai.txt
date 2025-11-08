@@ -1,0 +1,66 @@
+video: https://youtu.be/nckZYA1Zy4s
+
+Este projeto é um web app de nutrição com foco em uso em smartphones. Ele oferece um chat inteligente (NutriAI) para análise de mensagens e fotos de alimentos, exibe uma cartela nutricional com dados extraídos por IA e mantém um histórico de conversas. O app inclui telas essenciais de autenticação, perfil, relatório e uma área administrativa para consulta de usuários. Toda a navegação e interação foram pensadas para telas menores: cabeçalho compacto, ações principais recolhidas em menu hambúrguer, campos com alvos de toque confortáveis e componentes “sticky” que facilitam o uso com o polegar.
+Páginas e fluxo principal
+Chat (chat.php): o coração do app. Mostra mensagens do usuário à direita e da IA à esquerda. Permite:
+Envio de texto e imagem com pré-visualização imediata da foto e indicador de “scanner” enquanto a análise ocorre.
+Auto-ajuste do campo de texto (cresce até um limite sem quebrar o layout).
+Edição inline da última mensagem do usuário (sem recarregar a página).
+Resposta da IA com bolha textual e/ou cartela nutricional estruturada (calorias, proteínas, carboidratos, gorduras, fibras, açúcares, ferro, sódio, vitaminas), com sanitização de markdown.
+Limpar histórico com confirmação via modal e fallback de submissão em iframe.
+Perfil (profile.php): edição de dados pessoais (sexo, idade, peso, altura, gordura corporal opcional, objetivo), com histórico de alterações de peso/gordura sendo gravado automaticamente. Usa componentes de seleção customizados otimizados ao toque.
+Relatório (report.php): página destinada a consolidação (estrutura presente; integra com os mesmos tokens de UI).
+Autenticação: login.php, register.php, logout.php e guarda de sessão em auth.php com require_login() em páginas privadas.
+Conversas: conversas.php lista/gerencia histórico e new_conversation.php inicia um novo contexto. Há APIs de suporte em api/.
+Landing: landing/index.php e landing/styles.css para apresentação pública leve e responsiva.
+Admin (admin/index.php): lista todos os usuários (ID, nome, e-mail, sexo, idade, peso, altura, gordura, objetivo, criado em) com busca instantânea no cliente. Protegido por senha de backend e política de admins.
+APIs e integrações
+api/gemini.php: recebe o formulário do chat (texto/imagem), chama o endpoint Gemini definido em config.php (GEMINI_ENDPOINT) e retorna JSON com display, nutrients e user_msg_id. O front interpreta e renderiza bolhas/cartela.
+api/clear_chat.php: apaga o histórico do chat do usuário atual (acionado pelo botão “Limpar/Apagar Chat”).
+api/delete_conversation.php: remove conversas específicas (apoiando a tela de conversas).
+Banco de dados e persistência
+Script schema.sql para MySQL/MariaDB (charset utf8mb4):
+users: dados do usuário (nome, e-mail, hash de senha, sexo, idade, peso kg, altura cm, gordura %, objetivo, timestamps).
+messages: histórico do chat (papel, texto, imagem, resposta da IA e nutrientes estruturados).
+weight_history: histórico de peso e gordura.
+conversations: suporte a múltiplas conversas por usuário (criado/garantido em chat.php).
+Conexão via mysqli em db.php, com criação automática do banco/tabelas se necessário.
+Segurança e controle de acesso
+Sessão endurecida em config.php (cookies httponly, somente cookies).
+Renderização segura de conteúdo com htmlspecialchars e funções auxiliares (md_safe, strip_json_from_text) para evitar XSS.
+Consultas com prepared statements no acesso crítico a dados.
+Uploads restritos por tamanho (5MB, MAX_UPLOAD_BYTES) e tipo (ALLOWED_MIME_TYPES), persistidos em uploads/.
+Admin:
+ADMIN_BACKEND_PASSWORD em config.php ativa autenticação básica HTTP para o diretório /admin via admin/_guard.php.
+ADMIN_EMAILS (opcional) restringe acesso adicionalmente por e-mail; se vazio, apenas o usuário id=1 entra. admin/index.php exige também sessão autenticada.
+UI/UX otimizadas para smartphones
+Topo compacto (.topbar) com avatar e saudação (“Olá, Nome”) e objetivo. Em telas pequenas:
+Ações ocultas e menu hambúrguer visível; o painel do menu abre no canto superior esquerdo, com itens grandes e contrastantes.
+Ordem invertida para priorizar o alcance do polegar: botão de menu à esquerda, informações do usuário à direita.
+Chat:
+Container rolável com altura calculada para evitar sobreposição pelo teclado móvel.
+Composer sticky ao rodapé, com botões grandes e feedback de foco.
+Bolas de mensagem com sombras suaves, largura limitada para leitura confortável e tipografia nítida.
+Imagens com cantos arredondados, sombra e pré-visualização local antes do envio.
+Acessibilidade: estados de foco, contraste nas ações principais, fontes do sistema para performance, alvo de toque ≥40px, e animações leves.
+Estilos centralizados em assets/styles.css, com tokens (cores, sombra) e media queries específicas para <768px, garantindo responsividade consistente.
+Ferramentas e tecnologias
+PHP 8+ (procedural, sem framework) com mysqli.
+MySQL/MariaDB para persistência (compatível com XAMPP).
+HTML5/CSS3 com layout Flexbox e componentes custom (select, modal, botões).
+JavaScript vanilla para: autosize de textarea, preview de imagem, edição inline, modal de confirmação, menu móvel e renderização dinâmica da cartela.
+Integração com Google Gemini (modelos e endpoint configuráveis em config.php).
+XAMPP como ambiente local (Apache + PHP + MySQL), com base em BASE_URL definido.
+Estrutura de arquivos relevante
+chat.php, profile.php, report.php, conversas.php, new_conversation.php, login.php, register.php, logout.php.
+api/: gemini.php, clear_chat.php, delete_conversation.php.
+admin/: _guard.php, index.php.
+assets/styles.css, config.php, db.php, auth.php.
+uploads/ para imagens enviadas.
+Imagens estáticas em fotos/ e ícone favicon.png.
+Diferenciais para mobile
+Ações críticas sempre acessíveis via hambúrguer com abertura à esquerda.
+Composer e header “sticky” melhoram a continuidade do chat sob o teclado móvel.
+Limpeza de histórico com confirmação, sem redirecionamentos confusos (iframe de fallback).
+Edição inline da última mensagem reduz toques e navegação em telas pequenas.
+Cartela nutricional visual, de leitura imediata, evitando scroll excessivo.

@@ -168,6 +168,29 @@ const projectsData = {
             images: ['sistema sizing/1.png'],
             videoUrl: 'https://youtu.be/GsftzthvHn4'
         },
+        'nutriai': {
+            title: 'NutriAI',
+            description: 'Web app de nutrição mobile-first com chat inteligente, análise de imagens e cartela nutricional geradas por IA. Inclui histórico de conversas, perfil com acompanhamento de peso/gordura, landing pública e painel administrativo protegido. Construído em PHP 8 com MySQL, integra o Google Gemini para interpretar mensagens e fotos, garante segurança via sessões endurecidas, uploads validados e prepared statements.',
+            technologies: ['PHP 8', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Google Gemini', 'mysqli'],
+            images: [
+                'NutriAI/1.png',
+                'NutriAI/2.png',
+                'NutriAI/3.png',
+                'NutriAI/4.png',
+                'NutriAI/5.png',
+                'NutriAI/6.png',
+                'NutriAI/7.png',
+                'NutriAI/8.png',
+                'NutriAI/9.png',
+                'NutriAI/10.png',
+                'NutriAI/11.png',
+                'NutriAI/12.png',
+                'NutriAI/13.png',
+                'NutriAI/14.png',
+                'NutriAI/15.png'
+            ],
+            videoUrl: 'https://youtu.be/nckZYA1Zy4s'
+        },
         'renda-online': {
             title: 'Projeto Renda Online',
             description: 'Ecossistema completo de vendas com landing page de alta conversão, chatbot integrado à OpenAI, rastreamento de métricas e dashboards administrativos. Inclui área restrita para clientes, gerenciamento de leads, avaliações e relatórios, tudo em PHP com MySQL, Bootstrap 5 e foco em performance, segurança e mensuração.',
