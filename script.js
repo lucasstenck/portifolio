@@ -160,6 +160,42 @@ const projectsData = {
             technologies: ['MQL5', 'MetaTrader 5', 'Indicator Buffers', 'Objects API'],
             images: ['Projeto HighLow_S-R (MT5)/1.png', 'Projeto HighLow_S-R (MT5)/2.png', 'Projeto HighLow_S-R (MT5)/3.png', 'Projeto HighLow_S-R (MT5)/4.png', 'Projeto HighLow_S-R (MT5)/5.png'],
             videoUrl: 'https://youtu.be/4TdvNdjdTtA'
+        },
+        'sistema-sizing': {
+            title: 'Sistema Sizing',
+            description: 'Plataforma completa de criação e gerenciamento de formulários web personalizáveis desenvolvida em PHP. Sistema CMS com builder visual drag-and-drop, 4 tipos de campos (texto, numérico, upload, múltipla escolha), personalização visual completa com temas JSON, conformidade LGPD, painel administrativo moderno e URLs amigáveis. Arquitetura robusta com 12 tabelas principais, sistema de uploads seguro, validação rigorosa e performance otimizada.',
+            technologies: ['PHP', 'MySQL', 'JavaScript', 'CSS3', 'HTML5', 'PDO', 'Font Awesome'],
+            images: ['sistema sizing/1.png'],
+            videoUrl: 'https://youtu.be/GsftzthvHn4'
+        },
+        'renda-online': {
+            title: 'Projeto Renda Online',
+            description: 'Ecossistema completo de vendas com landing page de alta conversão, chatbot integrado à OpenAI, rastreamento de métricas e dashboards administrativos. Inclui área restrita para clientes, gerenciamento de leads, avaliações e relatórios, tudo em PHP com MySQL, Bootstrap 5 e foco em performance, segurança e mensuração.',
+            technologies: ['PHP', 'MySQL', 'Bootstrap 5', 'JavaScript', 'HTML5', 'OpenAI API', 'Font Awesome', 'PDO'],
+            images: [
+                'Projeto Renda Online/1.png',
+                'Projeto Renda Online/2.png',
+                'Projeto Renda Online/3.png',
+                'Projeto Renda Online/4.png',
+                'Projeto Renda Online/5.png',
+                'Projeto Renda Online/6.png',
+                'Projeto Renda Online/7.png',
+                'Projeto Renda Online/8.png',
+                'Projeto Renda Online/9.png',
+                'Projeto Renda Online/10.png',
+                'Projeto Renda Online/11.png',
+                'Projeto Renda Online/12.png',
+                'Projeto Renda Online/13.png',
+                'Projeto Renda Online/14.png',
+                'Projeto Renda Online/15.png',
+                'Projeto Renda Online/16.png',
+                'Projeto Renda Online/17.png',
+                'Projeto Renda Online/18.png',
+                'Projeto Renda Online/19.png',
+                'Projeto Renda Online/20.png',
+                'Projeto Renda Online/21.png'
+            ],
+            videoUrl: 'https://youtu.be/lz482Zouj9M'
         }
 };
 

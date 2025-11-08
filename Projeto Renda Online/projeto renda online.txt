@@ -1,0 +1,60 @@
+vide: https://youtu.be/lz482Zouj9M
+
+Visão geral
+O Projeto Renda Online é um sistema completo de vendas e atendimento, composto por uma página de conversão altamente persuasiva, um chatbot assistente virtual, coleta de métricas (visitas, cliques, leads, avaliações), área administrativa para gestão e análise, e área restrita para usuários autenticados. Ele foi pensado para rodar em ambiente PHP/MySQL (como XAMPP/Apache), com frontend responsivo e foco em performance, segurança e mensuração de resultados.
+Arquitetura e tecnologias
+Backend (PHP 7.4+): Renderização de páginas, APIs REST simples e autenticação de sessões.
+Banco de Dados (MySQL): Armazena usuários, leads, métricas de cliques/visitas, avaliações e uploads.
+Acesso a BD (PDO): Consultas seguras com prepared statements.
+Frontend (HTML5/CSS3/JS): Layout responsivo com Bootstrap 5 e ícones Font Awesome.
+Chatbot (OpenAI API): Integração via fetch no frontend e/ou cURL no PHP para mensagens.
+Assets: assets/css/style.css para estilos, assets/js/*.js para lógicas específicas (landing, chatbot, avaliações).
+Uploads: Diretórios dedicados e validados para arquivos de usuários (ex.: fotos de perfil).
+Vídeo: Hero com YouTube embutido para elevar engajamento e tempo de permanência.
+Fluxo do usuário (funil)
+Entrada pela Landing (index.php/landing.php): Banner com proposta de valor, vídeo hero, CTAs, provas sociais, garantias e seções de benefícios.
+Engajamento: O visitante assiste ao vídeo, navega por depoimentos e interage com o chatbot para tirar dúvidas sobre o produto/curso.
+Conversão: Cliques em CTAs são registrados por uma API de métricas; leads podem ser capturados via formulários que disparam api/cadastrar_lead.php.
+Pós-conversão: Usuário pode criar conta/autenticar-se e acessar a área restrita para ver conteúdo, atualizar perfil e continuar interagindo.
+Backoffice: O time acessa o painel admin para visualizar relatórios, métricas, avaliações e gerenciar usuários.
+Chatbot assistente virtual
+O chat fica disponível como widget flutuante.
+No frontend, a mensagem do usuário é enviada via fetch para a API do OpenAI; no backend, há endpoints PHP que também podem orquestrar a chamada via cURL.
+O prompt do sistema é configurado para manter o assistente focado no Projeto Renda Online (posicionamento, objeções, módulos, garantias).
+Há lógica de limite de uso/“rate limiting” e verificação de sessão para evitar abuso e custos indevidos.
+Respostas são retornadas em JSON e renderizadas no chat em tempo real.
+Métricas e rastreio
+Visitas: Registradas ao carregar páginas chave (ex.: registrarVisita('index')).
+Cliques: Função JS envia POST para api/registrar_clique.php sempre que um CTA é acionado, gravando contexto e origem.
+Leads: Formulários de captura disparam api/cadastrar_lead.php, salvando dados de contato.
+Avaliações e likes: APIs (avaliacoes.php, like_avaliacao.php, estatisticas_avaliacoes.php) permitem listar, avaliar e medir engajamento com prova social.
+O admin consolida tudo em telas de métricas, relatórios e dashboards para tomada de decisão.
+Área administrativa
+Login/Logout com sessões e senhas hash (via password_hash()/password_verify()).
+Módulos: usuários, leads, avaliações, relatórios, métricas de cliques/visitas/vídeo, configurações.
+Visualizações com filtros por período, exportações simples e acompanhamento de desempenho por página e CTA.
+Área restrita do usuário
+Autenticação: formulário de login/cadastro; verificação de sessão com api/verificar_sessao.php.
+Perfil: atualização de dados e upload de foto com validação de tipo e tamanho; arquivos salvos em diretórios específicos.
+Conteúdo: acesso controlado ao material (ex.: links, vídeos locais, instruções), mantendo isolação do que é público.
+Segurança e boas práticas
+Senhas: armazenadas com hash seguro.
+PDO + Prepared Statements: proteção contra SQL Injection.
+Validação/Sanitização: nos inputs de APIs, com checagem de MIME e limite de tamanho em uploads.
+Sessões seguras: checagens de login nas rotas que exigem autenticação.
+Rate limiting do chatbot: evita uso abusivo e custos.
+Logs/diagnóstico: páginas utilitárias e error_log para suporte e manutenção.
+Desempenho e SEO
+CSS/JS otimizados e CDN para bibliotecas (Bootstrap/Font Awesome).
+Imagens otimizadas e vídeos via YouTube (streaming e cache do player).
+Estrutura semântica (headings, meta description) e conteúdo escaneável com seções curtas e fortes CTAs.
+Implantação e operação
+Requisitos: Apache (XAMPP), PHP 7.4+, MySQL, extensões PDO, PDO_MySQL, GD, JSON.
+Banco inicial via database.sql; tabelas adicionais (ex.: estatísticas) via scripts como create_stats_table.sql.
+Configuração do BD em config/database.php.
+Chaves de API definidas no frontend/backend conforme a estratégia (com recomendação de centralizar no backend).
+Extensibilidade
+Fácil adicionar novos CTAs rastreados, páginas de campanha, relatórios no admin e integrações (pagamento, CRM).
+O chatbot pode ganhar rotas de “handoff” humano, base de conhecimento própria e cache de respostas frequentes.
+Módulos como “afiliados”, “cupons” e “webhooks” podem ser integrados sem alterar a base do funil.
+Em resumo, o Projeto Renda Online une copy de alta conversão, um assistente virtual integrado à OpenAI, e um ecossistema de métricas e gestão para escalar aquisição e vendas com controle total do funil e da experiência do usuário.
