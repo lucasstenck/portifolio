@@ -1,10 +1,8 @@
-/* Portfólio minimalista: sem fontes nem bibliotecas externas, claro/escuro automático. */
+/* Portfólio minimalista em tema escuro, sem fontes nem bibliotecas externas. */
 :root {
-  --bg: #fff; --fg: #15171c; --mute: #5d6470; --line: #e6e8ec; --card: #f6f7f9; --accent: #1f6feb; --on: #fff;
+  color-scheme: dark;
+  --bg: #0b0c0f; --fg: #eceef2; --mute: #9aa1ad; --line: #22252c; --card: #13151a; --accent: #7aa9ff;
   --r: 14px; --max: 1080px;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #0e0f12; --fg: #eceef2; --mute: #98a0ad; --line: #23262d; --card: #16181d; --accent: #6ea8ff; --on: #0e0f12; }
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 70px; }
