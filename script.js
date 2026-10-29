@@ -1,439 +1,140 @@
-// Dados dos projetos
-const projectsData = {
-    'apostas-max': {
-        title: 'ApostasMax',
-        description: 'Portal completo de loterias desenvolvido em Python com Flask. Sistema de geradores inteligentes para diferentes loterias, desdobramentos matemáticos e integração com API da Caixa Econômica Federal.',
-        technologies: ['Python', 'Flask', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
-        images: ['Apostas Max web/1.png', 'Apostas Max web/2.png', 'Apostas Max web/3.png', 'Apostas Max web/4.png'],
-        videoUrl: 'https://youtu.be/QbSPUfqbJdA'
-    },
-    'area-membros': {
-        title: 'Área de Membros',
-        description: 'Plataforma completa para gerenciamento de cursos online com React, TypeScript e PHP. Sistema de autenticação, progresso individual, player de vídeo integrado e chat em tempo real.',
-        technologies: ['React', 'TypeScript', 'PHP', 'MySQL', 'Tailwind CSS', 'Framer Motion'],
-        images: ['Área de Membros web/1.png', 'Área de Membros web/2.png', 'Área de Membros web/3.png', 'Área de Membros web/4.png', 'Área de Membros web/5.png', 'Área de Membros web/6.png', 'Área de Membros web/7.png', 'Área de Membros web/8.png', 'Área de Membros web/9.png', 'Área de Membros web/10.png', 'Área de Membros web/11.png'],
-        videoUrl: 'https://www.youtube.com/watch?v=Ua-HHZDPJxw'
-    },
-    'conversor-moedas': {
-        title: 'Conversor de Moedas',
-        description: 'Conversor de moedas desenvolvido com Node.js e Express, oferecendo conversão em tempo real entre 150 moedas diferentes com atualizações automáticas via API externa.',
-        technologies: ['Node.js', 'Express', 'JavaScript', 'HTML', 'CSS', 'Axios'],
-        images: ['Conversor de Moedas WEB/1.png'],
-        videoUrl: 'https://youtu.be/nBWXG9p8_oc'
-    },
-    'diet-transform': {
-        title: 'Diet-Transform',
-        description: 'Funil de vendas completo para produtos dietéticos com três páginas principais. Sistema de autenticação, área de membros com painel de progresso e cursos em vídeo.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
-        images: ['Diet-Transform/1.png', 'Diet-Transform/2.png', 'Diet-Transform/3.png'],
-        videoUrl: 'https://youtu.be/3ol5tkZ8Xy0'
-    },
-    'e-commerce': {
-        title: 'StyleStore',
-        description: 'Loja de roupas de comércio eletrônico construída com HTML, CSS, JavaScript, PHP e MySQL. Sistema completo de autenticação, carrinho de compras e gerenciamento de produtos.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-        images: ['E-Commerce web/1.png', 'E-Commerce web/2.png', 'E-Commerce web/3.png'],
-        videoUrl: 'https://youtu.be/3_uZiSALiMU'
-    },
-    'guia-nutricional': {
-        title: 'Guia Nutricional',
-        description: 'Aplicativo React Native completo para gerenciamento de saúde, nutrição e fitness. Planos alimentares personalizados, biblioteca de receitas e acompanhamento de progresso.',
-        technologies: ['React Native', 'TypeScript', 'Expo', 'AsyncStorage', 'NativeWind'],
-        images: ['Guia nutricional mobile/1.png', 'Guia nutricional mobile/2.png', 'Guia nutricional mobile/3.png', 'Guia nutricional mobile/4.png', 'Guia nutricional mobile/5.png', 'Guia nutricional mobile/6.png', 'Guia nutricional mobile/7.png', 'Guia nutricional mobile/8.png', 'Guia nutricional mobile/9.png', 'Guia nutricional mobile/10.png', 'Guia nutricional mobile/11.png', 'Guia nutricional mobile/12.png', 'Guia nutricional mobile/13.png', 'Guia nutricional mobile/14.png'],
-        videoUrl: 'https://youtube.com/shorts/YK5u0UovdpA'
-    },
-    'padula': {
-        title: 'Padula Accounting',
-        description: 'Sistema de captura de leads com modal WhatsApp integrado. Front-end moderno com back-end Node.js e banco de dados SQLite para uma experiência fluida.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite'],
-        images: ['Padula web/1.png', 'Padula web/2.png'],
-        videoUrl: 'https://youtu.be/T7De7YKaxJw'
-    },
-    'pagina-vendas': {
-        title: 'Página de Vendas',
-        description: 'Landing page para captura de leads com sistema modal inteligente. Design responsivo com backend PHP e integração com banco de dados MySQL.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-        images: ['Página de Vendas/1.png', 'Página de Vendas/2.png', 'Página de Vendas/3.png', 'Página de Vendas/4.png', 'Página de Vendas/5.png', 'Página de Vendas/6.png', 'Página de Vendas/7.png', 'Página de Vendas/8.png'],
-        videoUrl: 'https://youtu.be/A4QI4wjRg9s'
-    },
-    'pizzaria-mobile': {
-        title: 'Pizzaria Mobile',
-        description: 'Aplicativo de e-commerce em React Native com TypeScript e Expo Go para pedidos de pizza. Sistema completo de autenticação, catálogo dinâmico e carrinho de compras.',
-        technologies: ['React Native', 'TypeScript', 'Expo', 'MySQL', 'AsyncStorage'],
-        images: ['Pizzaria mobile/1.jfif', 'Pizzaria mobile/2.jfif', 'Pizzaria mobile/3.jfif', 'Pizzaria mobile/4.jfif', 'Pizzaria mobile/5.jfif', 'Pizzaria mobile/6.jfif', 'Pizzaria mobile/7.jfif'],
-        videoUrl: 'https://youtube.com/shorts/pVgTo6tIphk'
-    },
-    'pizzaria-web': {
-        title: 'Pizzaria Web',
-        description: 'Sistema de e-commerce para pizzaria com frontend responsivo e backend Node.js. Carrinho de compras interativo, carregamento dinâmico de menus e confirmações modais.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'SQLite'],
-        images: ['Pizzaria web/1.png', 'Pizzaria web/2.png', 'Pizzaria web/3.png'],
-        videoUrl: 'https://youtu.be/8i5PQoHw9cc'
-    },
-    'robo-vendedor': {
-        title: 'Robô Vendedor',
-        description: 'Landing page para captura de leads com modal inteligente. Sistema de validação em tempo real, integração com WhatsApp e design responsivo.',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-        images: ['Robo Vendedor web/1.png', 'Robo Vendedor web/2.png', 'Robo Vendedor web/3.png'],
-        videoUrl: 'https://youtu.be/LXiqHN8r4xA'
-    },
-    'reforco-online': {
-        title: 'Reforço Online',
-        description: 'Plataforma completa que conecta alunos e professores para aulas de reforço escolar online. Sistema de chat em tempo real, dashboard para gestão de aulas, upload de materiais didáticos e controle de disponibilidade. Interface com React e TypeScript, backend PHP com APIs RESTful e banco MySQL.',
-        technologies: ['React', 'TypeScript', 'PHP', 'MySQL', 'CSS3', 'JavaScript'],
-        images: ['Reforço Online/1.png', 'Reforço Online/2.png', 'Reforço Online/3.png', 'Reforço Online/4.png', 'Reforço Online/5.png', 'Reforço Online/6.png', 'Reforço Online/7.png', 'Reforço Online/8.png', 'Reforço Online/9.png', 'Reforço Online/10.png', 'Reforço Online/11.png', 'Reforço Online/12.png', 'Reforço Online/13.png', 'Reforço Online/14.png', 'Reforço Online/15.png', 'Reforço Online/16.png', 'Reforço Online/17.png', 'Reforço Online/18.png'],
-        videoUrl: 'https://youtu.be/GWz9RJ-Kx9U'
-    },
-    'conversor-de-moedas-mobile': {
-        title: 'Conversor de Moedas Mobile',
-        description: 'Aplicativo React Native para conversão de moedas em tempo real com 150+ moedas. Interface moderna com design dark mode, taxas atualizadas via API e sistema de fallback para funcionamento offline.',
-        technologies: ['React Native', 'Expo', 'TypeScript', 'API AwesomeAPI'],
-        images: ['Conversor de Moedas Mobile/1.jfif', 'Conversor de Moedas Mobile/2.jfif', 'Conversor de Moedas Mobile/3.jfif'],
-        videoUrl: 'https://youtube.com/shorts/vh_sg01Gp3M'
-    },
-    'fit-21-dias': {
-        title: 'Projeto 21 Fit Dias',
-        description: 'Plataforma de transformação física com resultados comprovados em 21 dias. Sistema de acompanhamento visual com fotos antes/depois, métricas de progresso, cronograma estruturado e interface responsiva moderna.',
-        technologies: ['React', 'TypeScript', 'Node.js', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'],
-        images: ['Projeto Fit 21 Dias/1.png', 'Projeto Fit 21 Dias/2.png', 'Projeto Fit 21 Dias/3.png', 'Projeto Fit 21 Dias/5.png', 'Projeto Fit 21 Dias/6.png', 'Projeto Fit 21 Dias/7.png', 'Projeto Fit 21 Dias/8.png', 'Projeto Fit 21 Dias/9.png', 'Projeto Fit 21 Dias/10.png', 'Projeto Fit 21 Dias/11.png', 'Projeto Fit 21 Dias/12.png', 'Projeto Fit 21 Dias/13.png'],
-        videoUrl: 'https://youtu.be/HbrZEmRxAcM'
-    },
-    'biblioteca-digital': {
-        title: 'Biblioteca Digital',
-        description: 'Aplicativo móvel completo para download de livros em PDF. Backend Node.js com Express e MySQL, frontend React Native com Expo. Sistema de autenticação JWT, busca de livros, downloads e interface mobile responsiva para Android e iOS.',
-        technologies: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'Express', 'MySQL', 'JWT'],
-        images: ['Biblioteca Digital/1.png', 'Biblioteca Digital/2.png', 'Biblioteca Digital/3.png', 'Biblioteca Digital/4.png', 'Biblioteca Digital/5.png', 'Biblioteca Digital/6.png', 'Biblioteca Digital/7.png', 'Biblioteca Digital/8.png', 'Biblioteca Digital/9.png', 'Biblioteca Digital/10.png', 'Biblioteca Digital/11.png', 'Biblioteca Digital/12.png'],
-        videoUrl: 'https://youtu.be/kkfoxrcMs-E'
-    },
-    'primecar': {
-        title: 'PrimeCar',
-        description: 'Plataforma completa de marketplace automotivo desenvolvida em React.js e Node.js. Sistema de anúncios com upload de imagens, filtros avançados de busca, chat em tempo real com Socket.io, painel administrativo e autenticação JWT. Ideal para concessionárias e plataformas de compra e venda de veículos.',
-        technologies: ['React.js', 'Node.js', 'Express', 'Socket.io', 'SQLite', 'JWT', 'Multer'],
-        images: ['PrimeCar/1.png', 'PrimeCar/2.png', 'PrimeCar/3.png', 'PrimeCar/4.png', 'PrimeCar/5.png', 'PrimeCar/6.png', 'PrimeCar/7.png', 'PrimeCar/8.png', 'PrimeCar/9.png', 'PrimeCar/10.png'],
-        videoUrl: 'https://youtu.be/pngSHrCa5Ik'
-    },
-            'sistema-avaliacao-seguranca': {
-            title: 'Sistema de Avaliação de Segurança',
-            description: 'Plataforma web completa para avaliação NIST CSF com painel administrativo. Possui criação/edição de avaliações por funções e subcategorias, cálculo de pontuações e maturidade, gestão de clientes, relatórios com gráficos (linha, radar, pizza, barras) e exportação CSV/PDF/DOCX, dashboard com temas, LGPD com editor e sincronização em banco/arquivo, configurações visuais (cores, fontes, rodapé), permissões por usuário e frontend público com validações.',
-            technologies: ['PHP', 'PDO', 'MySQL', 'Composer', 'Chart.js', 'Spatie Browsershot', 'PHPWord', 'Node.js', 'JavaScript', 'HTML5', 'CSS3'],
-            images: ['Sistema de Avaliacao de Seguranca/1.png', 'Sistema de Avaliacao de Seguranca/2.png', 'Sistema de Avaliacao de Seguranca/3.png', 'Sistema de Avaliacao de Seguranca/4.png', 'Sistema de Avaliacao de Seguranca/5.png', 'Sistema de Avaliacao de Seguranca/6.png', 'Sistema de Avaliacao de Seguranca/7.png', 'Sistema de Avaliacao de Seguranca/8.png', 'Sistema de Avaliacao de Seguranca/9.png'],
-            videoUrl: 'https://youtu.be/gxftCiJzoHU'
-        },
-        'loterias-inteligente': {
-            title: 'Loterias Inteligente',
-            description: 'Aplicativo mobile completo para estratégias de loterias utilizando React Native com Expo. Suporta 8 modalidades de loterias (Mega-Sena, Lotofácil, Quina, Dupla Sena, Lotomania, Timemania, Mais Milionária e Dia de Sorte) com geradores inteligentes baseados em estatísticas, sistema de desdobramentos para aumentar chances de acerto, histórico personalizado de apostas e análise de frequência dos números mais sorteados. Integra Firebase para sincronização em tempo real, autenticação Google OAuth, e sistema de assinaturas PRO com Google Play Billing.',
-            technologies: ['React Native', 'Expo', 'Firebase', 'JavaScript', 'Firestore', 'Google OAuth', 'Google Play Billing'],
-            images: ['Loterias Inteligente/1.png', 'Loterias Inteligente/2.png', 'Loterias Inteligente/3.png', 'Loterias Inteligente/4.png', 'Loterias Inteligente/5.png', 'Loterias Inteligente/6.png', 'Loterias Inteligente/7.png', 'Loterias Inteligente/8.png', 'Loterias Inteligente/9.png', 'Loterias Inteligente/10.png', 'Loterias Inteligente/11.png', 'Loterias Inteligente/12.png'],
-            videoUrl: 'https://www.youtube.com/watch?v=g6Z1GHJCsk8'
-        },
-        'voebarato': {
-            title: 'VoeBarato',
-            description: 'MVP mobile para monitoramento de passagens: autenticação com JWT, busca de voos com ida/volta e data BR, criação de alertas de preço, histórico e deep links para ofertas.',
-            technologies: ['Python', 'FastAPI', 'React Native', 'Expo', 'TypeScript', 'SQLite', 'SQLAlchemy', 'JWT', 'Docker'],
-            images: ['VoeBarato/1.png', 'VoeBarato/2.png', 'VoeBarato/3.png'],
-            videoUrl: 'https://youtube.com/shorts/J3yDT7pPxDQ'
-        },
-        'dashboard-b3': {
-            title: 'Dashboard Executivo B3',
-            description: 'Coleta de dados da B3 com yfinance e Fundamentus, indicadores (SMA, RSI, MACD, volatilidade) e geração de relatório Excel executivo com KPIs e abas por ativo. GUI em tkinter e build .exe com PyInstaller.',
-            technologies: ['Python', 'Pandas', 'NumPy', 'yfinance', 'Requests', 'XlsxWriter', 'tkinter', 'PyInstaller'],
-            images: ['Dashboard Executivo B3/1.png', 'Dashboard Executivo B3/2.png', 'Dashboard Executivo B3/3.png', 'Dashboard Executivo B3/4.png', 'Dashboard Executivo B3/5.png', 'Dashboard Executivo B3/6.png', 'Dashboard Executivo B3/7.png', 'Dashboard Executivo B3/8.png'],
-            videoUrl: 'https://www.youtube.com/watch?v=M0k4gUP78fY'
-        },
-        'dr-henrique': {
-            title: 'Dr Henrique',
-            description: 'Sistema de agendamento odontológico com bot WhatsApp: frontend web responsivo, backend PHP/MySQL com API REST e bot Python/Flask via Twilio (deploy em Google Cloud Run).',
-            technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Python', 'Flask', 'Twilio', 'Google Cloud'],
-            images: ['Dr Henrique/1.png', 'Dr Henrique/2.png', 'Dr Henrique/3.png', 'Dr Henrique/4.png', 'Dr Henrique/5.png', 'Dr Henrique/6.png', 'Dr Henrique/7.png', 'Dr Henrique/8.png', 'Dr Henrique/9.png'],
-            videoUrl: 'https://youtu.be/J7npgO-mUIY'
-        },
-        'landing-page': {
-            title: 'Landing Page — Curso de Tráfego Pago',
-            description: 'LP preto/branco com detalhes em vermelho focada em conversão: captação (PHP + PDO MySQL), urgência (contador por visitante), modal de intenção de saída, depoimentos autoindexados (fotos e vídeos), SEO/OG e AOS.',
-            technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'AOS'],
-            images: ['landing-page/1.png', 'landing-page/2.png', 'landing-page/3.png', 'landing-page/4.png', 'landing-page/5.png', 'landing-page/6.png', 'landing-page/7.png', 'landing-page/8.png', 'landing-page/9.png', 'landing-page/10.png'],
-            videoUrl: 'https://youtu.be/2Afiq1OzmEA'
-        },
-        'highlow-mt5': {
-            title: 'HighLow S/R (MT5)',
-            description: 'Indicador técnico para MetaTrader 5 (MQL5) que detecta pivôs, identifica rompimentos e desenha zonas de suporte/resistência rompidas, com alertas (popup/som/push) e cálculo incremental para performance.',
-            technologies: ['MQL5', 'MetaTrader 5', 'Indicator Buffers', 'Objects API'],
-            images: ['Projeto HighLow_S-R (MT5)/1.png', 'Projeto HighLow_S-R (MT5)/2.png', 'Projeto HighLow_S-R (MT5)/3.png', 'Projeto HighLow_S-R (MT5)/4.png', 'Projeto HighLow_S-R (MT5)/5.png'],
-            videoUrl: 'https://youtu.be/4TdvNdjdTtA'
-        },
-        'sistema-sizing': {
-            title: 'Sistema Sizing',
-            description: 'Plataforma completa de criação e gerenciamento de formulários web personalizáveis desenvolvida em PHP. Sistema CMS com builder visual drag-and-drop, 4 tipos de campos (texto, numérico, upload, múltipla escolha), personalização visual completa com temas JSON, conformidade LGPD, painel administrativo moderno e URLs amigáveis. Arquitetura robusta com 12 tabelas principais, sistema de uploads seguro, validação rigorosa e performance otimizada.',
-            technologies: ['PHP', 'MySQL', 'JavaScript', 'CSS3', 'HTML5', 'PDO', 'Font Awesome'],
-            images: ['sistema sizing/1.png'],
-            videoUrl: 'https://youtu.be/GsftzthvHn4'
-        },
-        'nutriai': {
-            title: 'NutriAI',
-            description: 'Web app de nutrição mobile-first com chat inteligente, análise de imagens e cartela nutricional geradas por IA. Inclui histórico de conversas, perfil com acompanhamento de peso/gordura, landing pública e painel administrativo protegido. Construído em PHP 8 com MySQL, integra o Google Gemini para interpretar mensagens e fotos, garante segurança via sessões endurecidas, uploads validados e prepared statements.',
-            technologies: ['PHP 8', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Google Gemini', 'mysqli'],
-            images: [
-                'NutriAI/1.png',
-                'NutriAI/2.png',
-                'NutriAI/3.png',
-                'NutriAI/4.png',
-                'NutriAI/5.png',
-                'NutriAI/6.png',
-                'NutriAI/7.png',
-                'NutriAI/8.png',
-                'NutriAI/9.png',
-                'NutriAI/10.png',
-                'NutriAI/11.png',
-                'NutriAI/12.png',
-                'NutriAI/13.png',
-                'NutriAI/14.png',
-                'NutriAI/15.png'
-            ],
-            videoUrl: 'https://youtu.be/nckZYA1Zy4s'
-        },
-        'renda-online': {
-            title: 'Projeto Renda Online',
-            description: 'Ecossistema completo de vendas com landing page de alta conversão, chatbot integrado à OpenAI, rastreamento de métricas e dashboards administrativos. Inclui área restrita para clientes, gerenciamento de leads, avaliações e relatórios, tudo em PHP com MySQL, Bootstrap 5 e foco em performance, segurança e mensuração.',
-            technologies: ['PHP', 'MySQL', 'Bootstrap 5', 'JavaScript', 'HTML5', 'OpenAI API', 'Font Awesome', 'PDO'],
-            images: [
-                'Projeto Renda Online/1.png',
-                'Projeto Renda Online/2.png',
-                'Projeto Renda Online/3.png',
-                'Projeto Renda Online/4.png',
-                'Projeto Renda Online/5.png',
-                'Projeto Renda Online/6.png',
-                'Projeto Renda Online/7.png',
-                'Projeto Renda Online/8.png',
-                'Projeto Renda Online/9.png',
-                'Projeto Renda Online/10.png',
-                'Projeto Renda Online/11.png',
-                'Projeto Renda Online/12.png',
-                'Projeto Renda Online/13.png',
-                'Projeto Renda Online/14.png',
-                'Projeto Renda Online/15.png',
-                'Projeto Renda Online/16.png',
-                'Projeto Renda Online/17.png',
-                'Projeto Renda Online/18.png',
-                'Projeto Renda Online/19.png',
-                'Projeto Renda Online/20.png',
-                'Projeto Renda Online/21.png'
-            ],
-            videoUrl: 'https://youtu.be/lz482Zouj9M'
-        }
-};
-
-// Função para extrair ID do YouTube da URL
-function extractYouTubeId(url) {
-    // Suporte para URLs de Shorts do YouTube
-    if (url.includes('/shorts/')) {
-        const shortsMatch = url.match(/\/shorts\/([^\/\?]+)/);
-        return shortsMatch ? shortsMatch[1] : null;
+// Portfólio dinâmico: os projetos vêm de projects.json; filtro, busca, "mostrar mais" e galeria rodam no navegador.
+(() => {
+  const PAGE = 24;
+  const kinds = [["", "Todos"], ["sites", "Sites"], ["apps", "Aplicativos"], ["sistemas", "Sistemas"]];
+  const kindName = { sites: "Site", apps: "Aplicativo", sistemas: "Sistema" };
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, props = {}, ...kids) => {
+    const node = Object.assign(document.createElement(tag), props);
+    for (const kid of kids) node.append(kid);
+    return node;
+  };
+  const state = { all: [], kind: "", origin: "", q: "", shown: PAGE, current: null, shot: 0 };
+  // Ordem a cada visita: embaralha velhos e novos e alterna app, site, app, site (um sistema a cada 12 itens).
+  const shuffle = (list) => {
+    const a = list.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  };
+  // Embaralha, mas distribui os projetos pessoais (poucos) de forma uniforme entre os da Oryveen.
+  const spread = (list) => {
+    const place = (items) => shuffle(items).map((p, i, a) => [(i + Math.random()) / a.length, p]);
+    return [...place(list.filter((p) => p.source === "pessoal")), ...place(list.filter((p) => p.source !== "pessoal"))].sort((x, y) => y[0] - x[0]).map(([, p]) => p);
+  };
+  function interleave(all) {
+    const apps = spread(all.filter((p) => p.kind === "apps")), sites = spread(all.filter((p) => p.kind === "sites")), systems = shuffle(all.filter((p) => p.kind === "sistemas"));
+    const out = [];
+    let turn = 0;
+    while (apps.length || sites.length || systems.length) {
+      if (systems.length && out.length % 12 === 11) { out.push(systems.pop()); continue; }
+      const first = turn % 2 === 0 ? apps : sites, second = turn % 2 === 0 ? sites : apps;
+      const next = first.length ? first : second.length ? second : systems;
+      out.push(next.pop());
+      turn++;
     }
-    
-    // Suporte para URLs normais do YouTube
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-    const match = url.match(regExp);
-    return (match && match[2].length === 11) ? match[2] : null;
-}
+    return out;
+  }
+  const norm = (text) => text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 
-// Função para criar iframe do YouTube
-function createYouTubeEmbed(url) {
-    const videoId = extractYouTubeId(url);
-    if (videoId) {
-        return `<iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  function filtered() {
+    const q = norm(state.q.trim());
+    return state.all.filter((p) =>
+      (!state.kind || p.kind === state.kind) && (!state.origin || p.source === state.origin) &&
+      (!q || norm(`${p.title} ${p.description} ${p.tags.join(" ")}`).includes(q)));
+  }
+
+  function card(p) {
+    const img = el("img", { src: p.cover, alt: "", loading: "lazy", decoding: "async", width: 640, height: 427 });
+    const txt = el("div", { className: "txt" });
+    if (p.source === "oryveen") txt.append(el("span", { className: "badge", textContent: "Oryveen" }));
+    txt.append(el("h3", { textContent: p.title }), el("p", { textContent: p.description }));
+    const btn = el("button", { type: "button", className: "card", ariaLabel: `Ver ${p.title}` }, el("div", { className: "pic" }, img), txt);
+    btn.addEventListener("click", () => open(p));
+    return el("li", {}, btn);
+  }
+
+  function render() {
+    const list = filtered();
+    const grid = $("grid");
+    grid.replaceChildren(...list.slice(0, state.shown).map(card));
+    $("count").textContent = `${list.length} ${list.length === 1 ? "projeto" : "projetos"}`;
+    $("empty").hidden = list.length > 0;
+    $("more").hidden = list.length <= state.shown;
+    for (const b of $("kinds").children) b.setAttribute("aria-pressed", String(b.dataset.kind === state.kind));
+  }
+  const reset = () => { state.shown = PAGE; render(); };
+
+  function show(i) {
+    const p = state.current;
+    state.shot = (i + p.images.length) % p.images.length;
+    const image = p.images[state.shot];
+    const main = $("dlg-img");
+    main.src = image.src;
+    main.alt = image.alt || `${p.title}, imagem ${state.shot + 1}`;
+    for (const [n, b] of [...$("dlg-thumbs").children].entries()) b.setAttribute("aria-current", String(n === state.shot));
+  }
+
+  function open(p) {
+    state.current = p;
+    $("dlg-kind").textContent = `${kindName[p.kind]}${p.source === "oryveen" ? " · Oryveen" : ""}`;
+    $("dlg-title").textContent = p.title;
+    $("dlg-desc").textContent = p.description;
+    $("dlg-tags").replaceChildren(...p.tags.map((t) => el("li", { textContent: t })));
+    const video = $("dlg-video");
+    video.hidden = !p.video;
+    if (p.video) video.href = p.video;
+    const thumbs = $("dlg-thumbs");
+    thumbs.hidden = p.images.length < 2;
+    thumbs.replaceChildren(...p.images.map((image, n) => {
+      const b = el("button", { type: "button", ariaLabel: `Imagem ${n + 1}` }, el("img", { src: image.src, alt: "", loading: "lazy", decoding: "async" }));
+      b.addEventListener("click", () => show(n));
+      return b;
+    }));
+    show(0);
+    if (!$("dlg").open) $("dlg").showModal();
+    history.replaceState(null, "", `#p=${encodeURIComponent(p.id)}`);
+  }
+
+  function close() { if ($("dlg").open) $("dlg").close(); }
+
+  async function init() {
+    $("year").textContent = new Date().getFullYear();
+    try {
+      state.all = interleave(await (await fetch("projects.json")).json());
+    } catch {
+      $("empty").textContent = "Não foi possível carregar os projetos agora. Recarregue a página.";
+      $("empty").hidden = false;
+      return;
     }
-    return `<p>Vídeo não disponível</p>`;
-}
-
-// Elementos DOM
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
-const modal = document.getElementById('projectModal');
-const modalContent = document.getElementById('modalContent');
-const closeBtn = document.querySelector('.close');
-const projectCards = document.querySelectorAll('.project-card');
-
-// Menu mobile
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Fechar menu ao clicar em um link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+    const count = (kind) => state.all.filter((p) => p.kind === kind).length;
+    $("stats").innerHTML = `<b>${state.all.length}</b> projetos · <b>${count("sites")}</b> sites · <b>${count("apps")}</b> aplicativos · <b>${count("sistemas")}</b> sistemas`;
+    $("kinds").replaceChildren(...kinds.map(([value, label]) => {
+      const b = el("button", { type: "button", textContent: label });
+      b.dataset.kind = value;
+      b.addEventListener("click", () => { state.kind = value; reset(); });
+      return b;
+    }));
+    let timer;
+    $("q").addEventListener("input", (event) => { clearTimeout(timer); timer = setTimeout(() => { state.q = event.target.value; reset(); }, 120); });
+    $("origin").addEventListener("change", (event) => { state.origin = event.target.value; reset(); });
+    $("more").addEventListener("click", () => { state.shown += PAGE; render(); });
+    $("close").addEventListener("click", close);
+    $("dlg").addEventListener("click", (event) => { if (event.target === $("dlg")) close(); });
+    $("dlg").addEventListener("close", () => { history.replaceState(null, "", location.pathname + location.search); });
+    $("dlg").addEventListener("keydown", (event) => {
+      if (!state.current) return;
+      if (event.key === "ArrowRight") show(state.shot + 1);
+      if (event.key === "ArrowLeft") show(state.shot - 1);
     });
-});
-
-// Smooth scrolling para links de navegação
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// Modal de projetos
-projectCards.forEach(card => {
-    card.addEventListener('click', () => {
-        const projectId = card.getAttribute('data-project');
-        openProjectModal(projectId);
-    });
-});
-
-// Função para abrir modal do projeto
-function openProjectModal(projectId) {
-    const project = projectsData[projectId];
-    if (!project) return;
-
-    const modal = document.getElementById('projectModal');
-    const modalContent = document.getElementById('modalContent');
-    
-    // Limpar conteúdo anterior
-    modalContent.innerHTML = '';
-    
-    // Criar conteúdo do modal
-    const content = `
-        <div class="modal-header">
-            <h2>${project.title}</h2>
-            <button class="close-btn" onclick="closeProjectModal()">&times;</button>
-        </div>
-        <div class="modal-body">
-            <div class="project-description">
-                <p>${project.description}</p>
-            </div>
-            
-            <div class="project-technologies">
-                <h3>Tecnologias Utilizadas:</h3>
-                <div class="tech-tags">
-                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-            </div>
-            
-            <div class="project-media">
-                <div class="video-section">
-                    <h3>Demonstração em Vídeo:</h3>
-                    <div class="video-container">
-                        ${createYouTubeEmbed(project.videoUrl)}
-                    </div>
-                </div>
-                
-                <div class="images-section">
-                    <h3>Imagens do Projeto:</h3>
-                    <div class="image-gallery">
-                        ${project.images.map(img => `
-                            <div class="gallery-item">
-                                <img src="${img}" alt="${project.title}" onclick="openImageModal('${img}')">
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            </div>
-        </div>
-    `;
-    
-    modalContent.innerHTML = content;
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-}
-
-// Fechar modal
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
-
-// Fechar modal ao clicar fora dele
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-});
-
-// Função para fechar modal do projeto
-function closeProjectModal() {
-    const modal = document.getElementById('projectModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-// Função para abrir modal de imagem
-function openImageModal(imageSrc) {
-    const modal = document.getElementById('imageModal');
-    const modalImage = document.getElementById('modalImage');
-    
-    modalImage.src = imageSrc;
-    modal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
-
-// Função para fechar modal de imagem
-function closeImageModal() {
-    const modal = document.getElementById('imageModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-// Fechar modais ao clicar fora deles
-window.addEventListener('click', (event) => {
-    const projectModal = document.getElementById('projectModal');
-    const imageModal = document.getElementById('imageModal');
-    
-    if (event.target === projectModal) {
-        closeProjectModal();
-    }
-    
-    if (event.target === imageModal) {
-        closeImageModal();
-    }
-});
-
-// Header scroll effect
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 100) {
-        header.style.background = 'rgba(10, 10, 10, 0.99)';
-        header.style.borderBottom = '1px solid #3b82f6';
-    } else {
-        header.style.background = 'rgba(10, 10, 10, 0.95)';
-        header.style.borderBottom = '1px solid #1f2937';
-    }
-});
-
-// Animação de entrada dos elementos
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observar elementos para animação
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.project-card, .skill-category');
-    
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-}); 
+    render();
+    // Link direto para um projeto: #p=id (também quando só o endereço muda)
+    const fromHash = () => {
+      const match = /^#p=(.+)$/.exec(location.hash);
+      const direct = match && state.all.find((p) => p.id === decodeURIComponent(match[1]));
+      if (direct && state.current?.id !== direct.id) open(direct);
+    };
+    window.addEventListener("hashchange", fromHash);
+    fromHash();
+  }
+  init();
+})();

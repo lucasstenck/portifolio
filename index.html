@@ -1,566 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas - Desenvolvedor Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucas · Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio de Lucas, desenvolvedor Full Stack: sites, aplicativos e sistemas em JavaScript, React, Node.js e Python.">
+<meta name="theme-color" content="#0e0f12">
+<link rel="icon" href="assets/lucas.webp">
+<link rel="preload" href="projects.json" as="fetch" crossorigin>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h2>Lucas</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#about" class="nav-link">Sobre Mim</a></li>
-                <li><a href="#projects" class="nav-link">Meus Projetos</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio">Lucas</a>
+    <nav aria-label="Principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
 
-                <!-- WhatsApp Button -->
-            <a href="https://wa.me/55219997999043" target="_blank" class="whatsapp-button" title="Entre em contato via WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Olá, eu sou Lucas</h1>
-                <h2>Desenvolvedor Full Stack</h2>
-                <p>Avançado em JavaScript, React, Node.js e Python</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="lucas.png" alt="Lucas - Desenvolvedor" class="profile-image">
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Sou brasileiro, tenho 26 anos e sou apaixonado por programação e tecnologia. Possuo conhecimento avançado em JavaScript, HTML, CSS, Node.js e Python, além de experiência com React, TypeScript e PHP.</p>
-                    
-                    <p>Minha jornada no desenvolvimento web começou com projetos pessoais e evoluiu para soluções completas que incluem:</p>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Frontend</h3>
-                            <ul>
-                                <li>JavaScript (ES6+)</li>
-                                <li>React & React Native</li>
-                                <li>TypeScript</li>
-                                <li>HTML5 & CSS3</li>
-                                <li>Tailwind CSS</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Backend</h3>
-                            <ul>
-                                <li>Node.js & Express</li>
-                                <li>Python & Flask</li>
-                                <li>PHP</li>
-                                <li>MySQL & SQLite</li>
-                                <li>APIs RESTful</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Mobile</h3>
-                            <ul>
-                                <li>React Native</li>
-                                <li>Expo</li>
-                                <li>TypeScript</li>
-                                <li>AsyncStorage</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-project="apostas-max">
-                    <div class="project-image">
-                        <img src="Apostas Max web/1.png" alt="ApostasMax">
-                    </div>
-                    <div class="project-info">
-                        <h3>ApostasMax</h3>
-                        <p>Portal completo de loterias com geradores inteligentes e desdobramentos matemáticos</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>JavaScript</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="area-membros">
-                    <div class="project-image">
-                        <img src="Área de Membros web/1.png" alt="Área de Membros">
-                    </div>
-                    <div class="project-info">
-                        <h3>Área de Membros</h3>
-                        <p>Plataforma completa para gerenciamento de cursos online com autenticação e chat</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="conversor-moedas">
-                    <div class="project-image">
-                        <img src="Conversor de Moedas WEB/1.png" alt="Conversor de Moedas">
-                    </div>
-                    <div class="project-info">
-                        <h3>Conversor de Moedas</h3>
-                        <p>Conversor em tempo real entre 150 moedas com API</p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="diet-transform">
-                    <div class="project-image">
-                        <img src="Diet-Transform/1.png" alt="Diet-Transform">
-                    </div>
-                    <div class="project-info">
-                        <h3>Diet-Transform</h3>
-                        <p>Funil de vendas completo para produtos dietéticos com sistema de autenticação</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="e-commerce">
-                    <div class="project-image">
-                        <img src="E-Commerce web/1.png" alt="StyleStore">
-                    </div>
-                    <div class="project-info">
-                        <h3>StyleStore</h3>
-                        <p>Loja de roupas completa com sistema de carrinho e autenticação</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="guia-nutricional">
-                    <div class="project-image">
-                        <img src="Guia nutricional mobile/1.png" alt="Guia Nutricional">
-                    </div>
-                    <div class="project-info">
-                        <h3>Guia Nutricional</h3>
-                        <p>Aplicativo completo de saúde e fitness com planos personalizados</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>TypeScript</span>
-                            <span>Expo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="padula">
-                    <div class="project-image">
-                        <img src="Padula web/1.png" alt="Padula Accounting">
-                    </div>
-                    <div class="project-info">
-                        <h3>Padula Accounting</h3>
-                        <p>Sistema de captura de leads com modal WhatsApp integrado</p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>SQLite</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="pagina-vendas">
-                    <div class="project-image">
-                        <img src="Página de Vendas/1.png" alt="Página de Vendas">
-                    </div>
-                    <div class="project-info">
-                        <h3>Página de Vendas</h3>
-                        <p>Landing page para produto de remoção de restrições de crédito</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="pizzaria-mobile">
-                    <div class="project-image">
-                        <img src="Pizzaria mobile/1.jfif" alt="Pizzaria Mobile">
-                    </div>
-                    <div class="project-info">
-                        <h3>Pizzaria Mobile</h3>
-                        <p>Aplicativo de e-commerce para pedidos de pizza com React Native</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>TypeScript</span>
-                            <span>Expo</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="pizzaria-web">
-                    <div class="project-image">
-                        <img src="Pizzaria web/1.png" alt="Pizzaria Web">
-                    </div>
-                    <div class="project-info">
-                        <h3>Pizzaria Web</h3>
-                        <p>Site de e-commerce para pizzaria com carrinho interativo</p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>SQLite</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="robo-vendedor">
-                    <div class="project-image">
-                        <img src="Robo Vendedor web/1.png" alt="Robô Vendedor">
-                    </div>
-                    <div class="project-info">
-                        <h3>Robô Vendedor</h3>
-                        <p>Landing page com modal inteligente para captura de leads</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="reforco-online">
-                    <div class="project-image">
-                        <img src="Reforço Online/1.png" alt="Reforço Online">
-                    </div>
-                    <div class="project-info">
-                        <h3>Reforço Online</h3>
-                        <p>Plataforma completa que conecta alunos e professores para aulas de reforço escolar online</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-project="conversor-de-moedas-mobile">
-                    <div class="project-image">
-                        <img src="Conversor de Moedas Mobile/1.jfif" alt="Conversor de Moedas Mobile">
-                    </div>
-                    <div class="project-info">
-                        <h3>Conversor de Moedas Mobile</h3>
-                        <p>Aplicativo React Native para conversão de moedas em tempo real com 150+ moedas</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>TypeScript</span>
-                            <span>Expo</span>
-                            <span>APIs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="fit-21-dias">
-                    <div class="project-image">
-                        <img src="Projeto Fit 21 Dias/1.png" alt="Projeto 21 Fit Dias">
-                    </div>
-                    <div class="project-info">
-                        <h3>Projeto 21 Fit Dias</h3>
-                        <p>Plataforma de transformação física com resultados comprovados em 21 dias</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Node.js</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="biblioteca-digital">
-                    <div class="project-image">
-                        <img src="Biblioteca Digital/1.png" alt="Biblioteca Digital">
-                    </div>
-                    <div class="project-info">
-                        <h3>Biblioteca Digital</h3>
-                        <p>Aplicativo móvel completo para download de livros em PDF com backend robusto</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Node.js</span>
-                            <span>MySQL</span>
-                            <span>Expo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="primecar">
-                    <div class="project-image">
-                        <img src="PrimeCar/1.png" alt="PrimeCar">
-                    </div>
-                    <div class="project-info">
-                        <h3>PrimeCar</h3>
-                        <p>Plataforma completa de marketplace automotivo com chat em tempo real</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Socket.io</span>
-                            <span>SQLite</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="sistema-avaliacao-seguranca">
-                    <div class="project-image">
-                        <img src="Sistema de Avaliacao de Seguranca/1.png" alt="Sistema de Avaliação de Segurança">
-                    </div>
-                    <div class="project-info">
-                        <h3>Sistema de Avaliação de Segurança</h3>
-                        <p>Sistema web completo para avaliação de segurança cibernética baseado no framework NIST</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="loterias-inteligente">
-                    <div class="project-image">
-                        <img src="Loterias Inteligente/1.png" alt="Loterias Inteligente">
-                    </div>
-                    <div class="project-info">
-                        <h3>Loterias Inteligente</h3>
-                        <p>Aplicativo mobile completo para estratégias de loterias com geradores inteligentes e análise estatística</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Expo</span>
-                            <span>Firebase</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="voebarato">
-                    <div class="project-image">
-                        <img src="VoeBarato/1.png" alt="VoeBarato">
-                    </div>
-                    <div class="project-info">
-                        <h3>VoeBarato</h3>
-                        <p>Monitoramento de passagens com alertas, histórico e deep links</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>React Native</span>
-                            <span>FastAPI</span>
-                            <span>SQLite</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="dashboard-b3">
-                    <div class="project-image">
-                        <img src="Dashboard Executivo B3/1.png" alt="Dashboard Executivo B3">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dashboard Executivo B3</h3>
-                        <p>Coleta B3, indicadores técnicos e relatório Excel executivo automatizado</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>yfinance</span>
-                            <span>XlsxWriter</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="dr-henrique">
-                    <div class="project-image">
-                        <img src="Dr Henrique/1.png" alt="Dr Henrique">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dr Henrique</h3>
-                        <p>Agendamento odontológico com bot WhatsApp e painel administrativo</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>Twilio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="landing-page">
-                    <div class="project-image">
-                        <img src="landing-page/1.png" alt="Landing Page - Curso de Tráfego Pago">
-                    </div>
-                    <div class="project-info">
-                        <h3>Landing Page (Curso de Tráfego)</h3>
-                        <p>LP de alta conversão com captação, urgência, depoimentos e modal</p>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="highlow-mt5">
-                    <div class="project-image">
-                        <img src="Projeto HighLow_S-R (MT5)/1.png" alt="Projeto HighLow_S-R (MT5)">
-                    </div>
-                    <div class="project-info">
-                        <h3>HighLow S/R (MT5)</h3>
-                        <p>Indicador MQL5: pivôs, rompimentos e zonas S/R com alertas</p>
-                        <div class="project-tech">
-                            <span>MQL5</span>
-                            <span>MetaTrader 5</span>
-                            <span>Indicators</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="sistema-sizing">
-                    <div class="project-image">
-                        <img src="sistema sizing/1.png" alt="Sistema Sizing">
-                    </div>
-                    <div class="project-info">
-                        <h3>Sistema Sizing</h3>
-                        <p>Plataforma completa de criação e gerenciamento de formulários web personalizáveis</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>JavaScript</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="nutriai">
-                    <div class="project-image">
-                        <img src="NutriAI/1.png" alt="NutriAI">
-                    </div>
-                    <div class="project-info">
-                        <h3>NutriAI</h3>
-                        <p>Web app mobile-first com chat inteligente, cartela nutricional e painel administrativo</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>JavaScript</span>
-                            <span>Google Gemini</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-project="renda-online">
-                    <div class="project-image">
-                        <img src="Projeto Renda Online/1.png" alt="Projeto Renda Online">
-                    </div>
-                    <div class="project-info">
-                        <h3>Projeto Renda Online</h3>
-                        <p>Ecossistema completo de vendas com landing page, chatbot e painel analítico</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Bootstrap 5</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Lucas</h3>
-                    <p>Desenvolvedor Full Stack Júnior</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://github.com/lucasstenck/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Lucas. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal de Projeto -->
-    <div id="projectModal" class="project-modal">
-        <div class="modal-content">
-            <div id="modalContent">
-                <!-- Conteúdo será inserido dinamicamente -->
-            </div>
-        </div>
+<main>
+  <section id="inicio" class="hero wrap">
+    <img class="avatar" src="assets/lucas.webp" alt="Lucas" width="112" height="112" decoding="async">
+    <div>
+      <p class="eyebrow">Desenvolvedor Full Stack</p>
+      <h1>Sites, aplicativos e sistemas, do design ao banco de dados.</h1>
+      <p class="lead">Avançado em JavaScript, React, Node.js e Python. Veja os trabalhos abaixo e filtre pelo que procura.</p>
+      <p class="stats" id="stats" aria-live="polite"></p>
     </div>
+  </section>
 
-    <!-- Modal de Imagem -->
-    <div id="imageModal" class="image-modal">
-        <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
-        <div class="image-modal-content">
-            <img id="modalImage" src="" alt="Imagem do projeto">
-        </div>
+  <section id="projetos" class="wrap">
+    <div class="head">
+      <h2>Projetos</h2>
+      <p class="count" id="count" aria-live="polite"></p>
     </div>
+    <div class="tools">
+      <div class="chips" id="kinds" role="group" aria-label="Tipo de projeto"></div>
+      <select id="origin" aria-label="Origem do projeto">
+        <option value="">Todas as origens</option>
+        <option value="oryveen">Oryveen</option>
+        <option value="pessoal">Projetos pessoais</option>
+      </select>
+      <input id="q" type="search" placeholder="Buscar projeto ou tecnologia" aria-label="Buscar projeto ou tecnologia" autocomplete="off">
+    </div>
+    <ul class="grid" id="grid"></ul>
+    <p class="empty" id="empty" hidden>Nenhum projeto encontrado. Tente outro filtro.</p>
+    <div class="more"><button id="more" type="button" hidden>Mostrar mais</button></div>
+  </section>
 
-    <!-- Botão WhatsApp Fixo -->
-    <a href="https://wa.me/55219997999043" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <section id="sobre" class="wrap about">
+    <h2>Sobre</h2>
+    <p>Sou brasileiro, tenho 26 anos e sou apaixonado por programação e tecnologia. Tenho conhecimento avançado em JavaScript, HTML, CSS, Node.js e Python, com experiência em React, TypeScript e PHP. Minha jornada começou com projetos pessoais e evoluiu para soluções completas.</p>
+    <dl class="skills">
+      <div><dt>Front-end</dt><dd>JavaScript, React, TypeScript, HTML5, CSS3, Tailwind</dd></div>
+      <div><dt>Back-end</dt><dd>Node.js, Express, Python, Flask, PHP, MySQL, SQLite, APIs REST</dd></div>
+      <div><dt>Mobile</dt><dd>React Native, Expo, TypeScript, AsyncStorage</dd></div>
+    </dl>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="contato" class="wrap contact">
+    <h2>Vamos conversar?</h2>
+    <p>Conte sua ideia e eu respondo pelo WhatsApp.</p>
+    <p class="links">
+      <a class="btn" href="https://wa.me/55219997999043" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn ghost" href="https://github.com/lucasstenck/" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+</main>
+
+<footer class="wrap foot">© <span id="year">2025</span> Lucas · Desenvolvedor Full Stack</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <article>
+    <button class="x" type="button" id="close" aria-label="Fechar">×</button>
+    <div class="shot"><img id="dlg-img" alt="" decoding="async"></div>
+    <div class="thumbs" id="dlg-thumbs" role="group" aria-label="Imagens do projeto"></div>
+    <div class="info">
+      <p class="eyebrow" id="dlg-kind"></p>
+      <h3 id="dlg-title"></h3>
+      <p id="dlg-desc"></p>
+      <ul class="tags" id="dlg-tags"></ul>
+      <p><a class="btn ghost" id="dlg-video" target="_blank" rel="noopener" hidden>Ver vídeo do projeto</a></p>
+    </div>
+  </article>
+</dialog>
+
+<script src="script.js" defer></script>
 </body>
-</html> 
+</html>
