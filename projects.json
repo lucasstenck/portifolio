@@ -7251,5 +7251,551 @@
         "label": "Versão mobile"
       }
     ]
+  },
+  {
+    "id": "quitute-delivery",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "Quitute",
+    "description": "App de delivery de comida brasileira regional: cozinhas das 7 regiões, personalização do prato, cupons, pagamento e rastreio do pedido no mapa.",
+    "tags": [
+      "Delivery regional",
+      "Carrinho e cupons",
+      "Rastreio em mapa"
+    ],
+    "cover": "assets/projetos/quitute-delivery/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/quitute-delivery/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Boas-vindas",
+        "label": "Boas-vindas"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Início",
+        "label": "Início"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Regiões e restaurantes",
+        "label": "Regiões e restaurantes"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Cozinha baiana",
+        "label": "Cozinha baiana"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Restaurante",
+        "label": "Restaurante"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Personalizar prato",
+        "label": "Personalizar prato"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Carrinho",
+        "label": "Carrinho"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Pagamento",
+        "label": "Pagamento"
+      },
+      {
+        "src": "assets/projetos/quitute-delivery/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Quitute — Rastreio do pedido",
+        "label": "Rastreio do pedido"
+      }
+    ]
+  },
+  {
+    "id": "vetor-logistica",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "Vetor",
+    "description": "Plataforma de logística e entregas sob demanda: cotação por veículo, rastreio em tempo real, chat, comprovante com assinatura e faturas.",
+    "tags": [
+      "Entregas sob demanda",
+      "Cotação e rastreio",
+      "Conta empresarial"
+    ],
+    "cover": "assets/projetos/vetor-logistica/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/vetor-logistica/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Enviar e escolher veículo",
+        "label": "Enviar e escolher veículo"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Detalhes da carga",
+        "label": "Detalhes da carga"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Cotação",
+        "label": "Cotação"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Motorista em rota",
+        "label": "Motorista em rota"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Chat com motorista",
+        "label": "Chat com motorista"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Comprovante",
+        "label": "Comprovante"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Histórico",
+        "label": "Histórico"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Carteira e fatura",
+        "label": "Carteira e fatura"
+      },
+      {
+        "src": "assets/projetos/vetor-logistica/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vetor — Relatórios",
+        "label": "Relatórios"
+      }
+    ]
+  },
+  {
+    "id": "oficio-vagas",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "ofício",
+    "description": "App de vagas de emprego com modo candidato e modo empresa: candidatura em etapas, pipeline de candidatos, agenda de entrevistas e visual minimalista.",
+    "tags": [
+      "Vagas e candidaturas",
+      "Modo empresa",
+      "Minimalista"
+    ],
+    "cover": "assets/projetos/oficio-vagas/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/oficio-vagas/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Vagas para você",
+        "label": "Vagas para você"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Detalhe da vaga",
+        "label": "Detalhe da vaga"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Candidatura",
+        "label": "Candidatura"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Minhas candidaturas",
+        "label": "Minhas candidaturas"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Conversa com recrutador",
+        "label": "Conversa com recrutador"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Painel da empresa",
+        "label": "Painel da empresa"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Candidatos",
+        "label": "Candidatos"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Perfil do candidato",
+        "label": "Perfil do candidato"
+      },
+      {
+        "src": "assets/projetos/oficio-vagas/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "ofício — Agenda de entrevistas",
+        "label": "Agenda de entrevistas"
+      }
+    ]
+  },
+  {
+    "id": "presto-servicos",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "Prestô",
+    "description": "Aplicativo de intermediação de serviços no modelo Airbnb/Uber: busca, agendamento, pagamento protegido, chat, avaliações e modo profissional.",
+    "tags": [
+      "Marketplace de serviços",
+      "Pagamento protegido",
+      "Modo profissional"
+    ],
+    "cover": "assets/projetos/presto-servicos/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/presto-servicos/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Início",
+        "label": "Início"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Busca",
+        "label": "Busca"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Perfil do profissional",
+        "label": "Perfil do profissional"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Agendamento",
+        "label": "Agendamento"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Pagamento seguro",
+        "label": "Pagamento seguro"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Minhas reservas",
+        "label": "Minhas reservas"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Detalhe da reserva",
+        "label": "Detalhe da reserva"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Painel do profissional",
+        "label": "Painel do profissional"
+      },
+      {
+        "src": "assets/projetos/presto-servicos/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prestô — Ganhos",
+        "label": "Ganhos"
+      }
+    ]
+  },
+  {
+    "id": "km-certo",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "KM Certo",
+    "description": "App de cálculo de corridas para motoristas e motoboys: tarifa, custo real por km, lucro líquido, taxímetro, metas e relatórios.",
+    "tags": [
+      "Cálculo de corridas",
+      "Lucro líquido",
+      "Taxímetro"
+    ],
+    "cover": "assets/projetos/km-certo/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/km-certo/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Calculadora",
+        "label": "Calculadora"
+      },
+      {
+        "src": "assets/projetos/km-certo/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Noturno e dinâmica",
+        "label": "Noturno e dinâmica"
+      },
+      {
+        "src": "assets/projetos/km-certo/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Detalhamento",
+        "label": "Detalhamento"
+      },
+      {
+        "src": "assets/projetos/km-certo/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Vale a pena?",
+        "label": "Vale a pena?"
+      },
+      {
+        "src": "assets/projetos/km-certo/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Taxímetro",
+        "label": "Taxímetro"
+      },
+      {
+        "src": "assets/projetos/km-certo/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Histórico",
+        "label": "Histórico"
+      },
+      {
+        "src": "assets/projetos/km-certo/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Resumo do dia",
+        "label": "Resumo do dia"
+      },
+      {
+        "src": "assets/projetos/km-certo/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Relatórios",
+        "label": "Relatórios"
+      },
+      {
+        "src": "assets/projetos/km-certo/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "KM Certo — Tarifas",
+        "label": "Tarifas"
+      }
+    ]
+  },
+  {
+    "id": "prumo-pedreiros",
+    "source": "pessoal",
+    "kind": "sites",
+    "title": "Prumo",
+    "description": "Site de intermediação de pedreiros: orçamento, propostas comparáveis, pagamento por etapas, calculadora de material e painel do profissional.",
+    "tags": [
+      "Orçamento e propostas",
+      "Calculadora de material",
+      "Painel do profissional"
+    ],
+    "cover": "assets/projetos/prumo-pedreiros/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/prumo-pedreiros/1.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Página inicial",
+        "label": "Página inicial"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/2.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Serviços",
+        "label": "Serviços"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/3.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Profissionais",
+        "label": "Profissionais"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/4.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Perfil do profissional",
+        "label": "Perfil do profissional"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/5.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Pedido de orçamento",
+        "label": "Pedido de orçamento"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/6.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Propostas recebidas",
+        "label": "Propostas recebidas"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/7.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Calculadora de material",
+        "label": "Calculadora de material"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/8.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Prumo — Guia de preços",
+        "label": "Guia de preços"
+      },
+      {
+        "src": "assets/projetos/prumo-pedreiros/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Prumo — Versão mobile",
+        "label": "Versão mobile"
+      }
+    ]
+  },
+  {
+    "id": "lexora-legaltech",
+    "source": "pessoal",
+    "kind": "sistemas",
+    "title": "Lexora",
+    "description": "Plataforma jurídica SaaS com IA: clientes, processos, prazos, documentos, financeiro, equipe com permissões, teste de 30 dias e assinatura recorrente.",
+    "tags": [
+      "LegalTech com IA",
+      "Multiescritório e LGPD",
+      "Assinatura recorrente"
+    ],
+    "cover": "assets/projetos/lexora-legaltech/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/lexora-legaltech/1.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Página de vendas",
+        "label": "Página de vendas"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/2.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — IA jurídica",
+        "label": "IA jurídica"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/3.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Painel",
+        "label": "Painel"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/4.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Movimentações (DataJud)",
+        "label": "Movimentações (DataJud)"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/5.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Prazos e agenda",
+        "label": "Prazos e agenda"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/6.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Minuta com IA",
+        "label": "Minuta com IA"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/7.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Financeiro",
+        "label": "Financeiro"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/8.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lexora — Assinatura",
+        "label": "Assinatura"
+      },
+      {
+        "src": "assets/projetos/lexora-legaltech/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lexora — Versão mobile",
+        "label": "Versão mobile"
+      }
+    ]
   }
 ]

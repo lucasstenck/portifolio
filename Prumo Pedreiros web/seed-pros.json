@@ -1,0 +1,456 @@
+[
+ {
+  "id": 1,
+  "name": "Antônio Ferreira",
+  "city": "São Paulo",
+  "bairro": "Mooca",
+  "services": [
+   "Alvenaria",
+   "Reboco e acabamento",
+   "Laje e fundação",
+   "Muro e calçada"
+  ],
+  "rating": 4.9,
+  "reviews": 142,
+  "jobs": 168,
+  "years": 22,
+  "verified": true,
+  "bio": "Mestre de obras há 22 anos. Construo e reformo casas, sobrados e muros com acabamento limpo e cronograma por escrito.",
+  "portfolio": [
+   {
+    "t": "Sobrado em Mooca",
+    "d": "Alvenaria, laje e reboco de 2 pavimentos",
+    "m2": 180,
+    "dias": 75,
+    "kind": "tijolo"
+   },
+   {
+    "t": "Muro de divisa",
+    "d": "Fundação, alvenaria estrutural e chapisco",
+    "m2": 46,
+    "dias": 9,
+    "kind": "muro"
+   },
+   {
+    "t": "Ampliação de cozinha",
+    "d": "Alvenaria e reboco fino",
+    "m2": 24,
+    "dias": 12,
+    "kind": "reboco"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 5
+   }
+  ],
+  "responde": "Responde em até 2 h",
+  "pin": "1111",
+  "phone": "11981111111",
+  "email": "antônio@exemplo.com"
+ },
+ {
+  "id": 2,
+  "name": "Edson Barbosa",
+  "city": "São Paulo",
+  "bairro": "Santana",
+  "services": [
+   "Piso e revestimento",
+   "Reforma de banheiro",
+   "Reforma de cozinha",
+   "Pequenos reparos",
+   "Reboco e acabamento"
+  ],
+  "rating": 4.95,
+  "reviews": 210,
+  "jobs": 257,
+  "years": 15,
+  "verified": true,
+  "bio": "Especialista em banheiros e cozinhas. Assentamento de porcelanato retificado, impermeabilização e acabamentos com nível a laser.",
+  "portfolio": [
+   {
+    "t": "Banheiro suíte",
+    "d": "Troca de revestimento e impermeabilização",
+    "m2": 9,
+    "dias": 6,
+    "kind": "piso"
+   },
+   {
+    "t": "Cozinha integrada",
+    "d": "Porcelanato 90x90 e bancada",
+    "m2": 38,
+    "dias": 10,
+    "kind": "piso"
+   },
+   {
+    "t": "Reforma de lavanderia",
+    "d": "Piso, azulejo e hidráulica",
+    "m2": 12,
+    "dias": 5,
+    "kind": "piso"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 5
+   }
+  ],
+  "responde": "Responde em até 1 h",
+  "pin": "2222",
+  "phone": "11982222222",
+  "email": "edson@exemplo.com"
+ },
+ {
+  "id": 3,
+  "name": "Josué Ramos",
+  "city": "Campinas",
+  "bairro": "Cambuí",
+  "services": [
+   "Alvenaria",
+   "Reboco e acabamento",
+   "Piso e revestimento",
+   "Pequenos reparos"
+  ],
+  "rating": 4.8,
+  "reviews": 98,
+  "jobs": 121,
+  "years": 12,
+  "verified": true,
+  "bio": "Pequenas e médias reformas residenciais. Cuido da obra do começo ao fim, com limpeza diária e entrega no prazo.",
+  "portfolio": [
+   {
+    "t": "Reforma de apartamento",
+    "d": "Demolição, alvenaria e reboco",
+    "m2": 64,
+    "dias": 20,
+    "kind": "reboco"
+   },
+   {
+    "t": "Piso de garagem",
+    "d": "Contrapiso e porcelanato",
+    "m2": 32,
+    "dias": 6,
+    "kind": "piso"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 5
+   }
+  ],
+  "responde": "Responde em até 2 h",
+  "pin": "3333",
+  "phone": "11983333333",
+  "email": "josué@exemplo.com"
+ },
+ {
+  "id": 4,
+  "name": "Marcelo Pimentel",
+  "city": "Belo Horizonte",
+  "bairro": "Savassi",
+  "services": [
+   "Alvenaria",
+   "Laje e fundação",
+   "Muro e calçada"
+  ],
+  "rating": 4.7,
+  "reviews": 76,
+  "jobs": 93,
+  "years": 18,
+  "verified": false,
+  "bio": "Fundações, lajes e muros de arrimo. Trabalho com equipe própria de 6 profissionais e engenheiro parceiro para laudos.",
+  "portfolio": [
+   {
+    "t": "Laje de cobertura",
+    "d": "Armação e concretagem de 52 m²",
+    "m2": 52,
+    "dias": 8,
+    "kind": "laje"
+   },
+   {
+    "t": "Muro de arrimo",
+    "d": "Contenção com 14 m de extensão",
+    "m2": 38,
+    "dias": 14,
+    "kind": "muro"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 4
+   }
+  ],
+  "responde": "Responde em até 1 h",
+  "pin": "4444",
+  "phone": "11984444444",
+  "email": "marcelo@exemplo.com"
+ },
+ {
+  "id": 5,
+  "name": "Valdir Santos",
+  "city": "Curitiba",
+  "bairro": "Batel",
+  "services": [
+   "Reboco e acabamento",
+   "Piso e revestimento",
+   "Reforma de banheiro",
+   "Reforma de cozinha"
+  ],
+  "rating": 4.92,
+  "reviews": 164,
+  "jobs": 188,
+  "years": 20,
+  "verified": true,
+  "bio": "Acabamento fino: reboco liso, gesso, porcelanato e revestimentos especiais. Obras organizadas e sem sujeira.",
+  "portfolio": [
+   {
+    "t": "Reforma de sala e cozinha",
+    "d": "Reboco, piso e rodapé",
+    "m2": 58,
+    "dias": 16,
+    "kind": "reboco"
+   },
+   {
+    "t": "Banheiro social",
+    "d": "Revestimento completo",
+    "m2": 7,
+    "dias": 5,
+    "kind": "piso"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 5
+   }
+  ],
+  "responde": "Responde em até 2 h",
+  "pin": "5555",
+  "phone": "11985555555",
+  "email": "valdir@exemplo.com"
+ },
+ {
+  "id": 6,
+  "name": "Cláudio Araújo",
+  "city": "Recife",
+  "bairro": "Boa Viagem",
+  "services": [
+   "Alvenaria",
+   "Piso e revestimento",
+   "Muro e calçada",
+   "Pequenos reparos"
+  ],
+  "rating": 4.85,
+  "reviews": 119,
+  "jobs": 142,
+  "years": 16,
+  "verified": true,
+  "bio": "Atuo em reformas residenciais e comerciais. Atendimento rápido para pequenos reparos e orçamento sem compromisso.",
+  "portfolio": [
+   {
+    "t": "Calçada e muro frontal",
+    "d": "Contrapiso, piso e muro de 12 m",
+    "m2": 44,
+    "dias": 7,
+    "kind": "muro"
+   },
+   {
+    "t": "Loja comercial",
+    "d": "Alvenaria e piso",
+    "m2": 70,
+    "dias": 18,
+    "kind": "tijolo"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 5
+   }
+  ],
+  "responde": "Responde em até 1 h",
+  "pin": "6666",
+  "phone": "11986666666",
+  "email": "cláudio@exemplo.com"
+ },
+ {
+  "id": 7,
+  "name": "Sérgio Nogueira",
+  "city": "São Paulo",
+  "bairro": "Tatuapé",
+  "services": [
+   "Reboco e acabamento",
+   "Piso e revestimento",
+   "Reforma de banheiro",
+   "Pequenos reparos"
+  ],
+  "rating": 4.88,
+  "reviews": 133,
+  "jobs": 149,
+  "years": 14,
+  "verified": true,
+  "bio": "Reformas de apartamentos, com foco em banheiros e acabamentos. Compatibilização com síndico e documentação de obra.",
+  "portfolio": [
+   {
+    "t": "Apartamento 80 m²",
+    "d": "Reboco, piso e pintura-base",
+    "m2": 80,
+    "dias": 26,
+    "kind": "reboco"
+   },
+   {
+    "t": "Banheiro de serviço",
+    "d": "Impermeabilização e revestimento",
+    "m2": 5,
+    "dias": 4,
+    "kind": "piso"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 5
+   }
+  ],
+  "responde": "Responde em até 2 h",
+  "pin": "7777",
+  "phone": "11987777777",
+  "email": "sérgio@exemplo.com"
+ },
+ {
+  "id": 8,
+  "name": "Raimundo Lopes",
+  "city": "Campinas",
+  "bairro": "Barão Geraldo",
+  "services": [
+   "Alvenaria",
+   "Laje e fundação",
+   "Muro e calçada",
+   "Pequenos reparos"
+  ],
+  "rating": 4.78,
+  "reviews": 87,
+  "jobs": 104,
+  "years": 25,
+  "verified": false,
+  "bio": "Construção e ampliação residencial. Orçamento detalhado por etapa e garantia de 12 meses nos serviços de alvenaria.",
+  "portfolio": [
+   {
+    "t": "Edícula nos fundos",
+    "d": "Fundação e alvenaria",
+    "m2": 36,
+    "dias": 22,
+    "kind": "tijolo"
+   },
+   {
+    "t": "Muro de 20 m",
+    "d": "Alvenaria e reboco",
+    "m2": 50,
+    "dias": 10,
+    "kind": "muro"
+   }
+  ],
+  "reviewsList": [
+   {
+    "n": "Camila A.",
+    "t": "Obra entregue antes do prazo e muito limpa. Super recomendo.",
+    "s": 5
+   },
+   {
+    "n": "Roberto S.",
+    "t": "Orçamento transparente, nada de surpresa no final.",
+    "s": 5
+   },
+   {
+    "n": "Fernanda L.",
+    "t": "Profissional pontual e caprichoso. O banheiro ficou perfeito.",
+    "s": 4
+   }
+  ],
+  "responde": "Responde em até 1 h",
+  "pin": "8888",
+  "phone": "11988888888",
+  "email": "raimundo@exemplo.com"
+ }
+]

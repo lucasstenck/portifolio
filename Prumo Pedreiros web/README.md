@@ -1,0 +1,2 @@
+# Prumo — site de intermediação de pedreiros
+Servidor Node sem dependências: node server.js (porta 3204). Fluxo real: cliente pede orçamento, profissionais da cidade recebem e enviam propostas pelo painel (PINs de demonstração em seed-pros.json, ex.: código 1 / PIN 1111), cliente compara e contrata com pagamento protegido por etapas. Inclui calculadora de material, guia de preços e cadastro de parceiros.

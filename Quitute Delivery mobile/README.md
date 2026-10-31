@@ -1,0 +1,2 @@
+# Quitute — delivery de comida brasileira regional (Android)
+App Android (shell Kotlin + WebView, offline). 7 regiões, 10 cozinhas, 50 pratos com ilustrações vetoriais procedurais, personalização do prato, carrinho com um restaurante por vez, cupons (QUITUTE10, FRETEGRATIS, PRIMEIRA15), pagamento, rastreio com mapa e entregador, histórico, favoritos e Clube Quitute. APK: dist/quitute-app.apk. Dados de exemplo: abrir #/exemplo/inicio.
