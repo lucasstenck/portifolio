@@ -6861,5 +6861,395 @@
         "label": "Versão mobile"
       }
     ]
+  },
+  {
+    "id": "vigora-fit",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "Vigora",
+    "description": "App de treino em casa com 233 exercícios animados, programas prontos, player com cronômetro e descanso, diário alimentar com mais de 5 mil alimentos, progresso e conquistas.",
+    "tags": [
+      "Treino em casa",
+      "Diário de calorias",
+      "Progresso e conquistas"
+    ],
+    "cover": "assets/projetos/vigora-fit/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/vigora-fit/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Início",
+        "label": "Início"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Programas de treino",
+        "label": "Programas de treino"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Programa HIIT",
+        "label": "Programa HIIT"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Treino com cronômetro",
+        "label": "Treino com cronômetro"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Descanso entre séries",
+        "label": "Descanso entre séries"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Detalhe do exercício",
+        "label": "Detalhe do exercício"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Diário alimentar",
+        "label": "Diário alimentar"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Busca de alimentos",
+        "label": "Busca de alimentos"
+      },
+      {
+        "src": "assets/projetos/vigora-fit/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vigora — Progresso",
+        "label": "Progresso"
+      }
+    ]
+  },
+  {
+    "id": "pata-viva-petshop",
+    "source": "pessoal",
+    "kind": "apps",
+    "title": "Pata Viva",
+    "description": "App de pet shop com agendamento em 4 etapas sem conflito de horário, agenda em calendário, acompanhamento do atendimento, carteira de vacinação, loja e painel da equipe.",
+    "tags": [
+      "Agendamento",
+      "Carteira de vacinação",
+      "Loja e painel da equipe"
+    ],
+    "cover": "assets/projetos/pata-viva-petshop/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/pata-viva-petshop/1.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Início",
+        "label": "Início"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Escolha de pet e serviço",
+        "label": "Escolha de pet e serviço"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Extras e profissional",
+        "label": "Extras e profissional"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Data e horário",
+        "label": "Data e horário"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Resumo do agendamento",
+        "label": "Resumo do agendamento"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Acompanhamento do atendimento",
+        "label": "Acompanhamento do atendimento"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Carteira de vacinação",
+        "label": "Carteira de vacinação"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Loja",
+        "label": "Loja"
+      },
+      {
+        "src": "assets/projetos/pata-viva-petshop/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Pata Viva — Painel da equipe",
+        "label": "Painel da equipe"
+      }
+    ]
+  },
+  {
+    "id": "ancora-contabilidade",
+    "source": "pessoal",
+    "kind": "sites",
+    "title": "Âncora Contabilidade",
+    "description": "Landing page de contabilidade online com simulador de regime tributário, planos, formulário de lead validado no servidor e painel administrativo com funil e exportação.",
+    "tags": [
+      "Captura de leads",
+      "Simulador tributário",
+      "Painel administrativo"
+    ],
+    "cover": "assets/projetos/ancora-contabilidade/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/ancora-contabilidade/1.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Topo com formulário de proposta",
+        "label": "Topo com formulário de proposta"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/2.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Serviços",
+        "label": "Serviços"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/3.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Simulador de regime",
+        "label": "Simulador de regime"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/4.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Planos",
+        "label": "Planos"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/5.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Validação do formulário",
+        "label": "Validação do formulário"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/6.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Lead enviado",
+        "label": "Lead enviado"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/7.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Painel de leads",
+        "label": "Painel de leads"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/8.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Âncora Contabilidade — Filtro por status",
+        "label": "Filtro por status"
+      },
+      {
+        "src": "assets/projetos/ancora-contabilidade/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Âncora Contabilidade — Versão mobile",
+        "label": "Versão mobile"
+      }
+    ]
+  },
+  {
+    "id": "vasconcelos-torres-advocacia",
+    "source": "pessoal",
+    "kind": "sites",
+    "title": "Vasconcelos Torres Advocacia",
+    "description": "Site institucional de advocacia trabalhista com calculadora de rescisão, agendamento de consulta, triagem de casos com protocolo, blog e painel administrativo.",
+    "tags": [
+      "Calculadora de rescisão",
+      "Agendamento e protocolo",
+      "Blog e painel"
+    ],
+    "cover": "assets/projetos/vasconcelos-torres-advocacia/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/1.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Página inicial",
+        "label": "Página inicial"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/2.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Áreas de atuação",
+        "label": "Áreas de atuação"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/3.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Calculadora de rescisão",
+        "label": "Calculadora de rescisão"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/4.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Triagem e protocolo",
+        "label": "Triagem e protocolo"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/5.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Agendamento de consulta",
+        "label": "Agendamento de consulta"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/6.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Artigo do blog",
+        "label": "Artigo do blog"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/7.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Painel — visão geral",
+        "label": "Painel — visão geral"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/8.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Vasconcelos Torres Advocacia — Painel — casos",
+        "label": "Painel — casos"
+      },
+      {
+        "src": "assets/projetos/vasconcelos-torres-advocacia/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Vasconcelos Torres Advocacia — Versão mobile",
+        "label": "Versão mobile"
+      }
+    ]
+  },
+  {
+    "id": "lance-certo-apostas",
+    "source": "pessoal",
+    "kind": "sistemas",
+    "title": "Lance Certo",
+    "description": "Plataforma de apostas esportivas ao vivo e cassino com saldo virtual: carteira com ledger, odds em tempo real, múltiplas, cash-out, jogos provably fair e backoffice.",
+    "tags": [
+      "Odds ao vivo",
+      "Cassino provably fair",
+      "Backoffice"
+    ],
+    "cover": "assets/projetos/lance-certo-apostas/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/lance-certo-apostas/1.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Esportes ao vivo",
+        "label": "Esportes ao vivo"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/2.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Cupom de múltipla",
+        "label": "Cupom de múltipla"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/3.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Minhas apostas e cash-out",
+        "label": "Minhas apostas e cash-out"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/4.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Cassino",
+        "label": "Cassino"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/5.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Crash",
+        "label": "Crash"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/6.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Roleta",
+        "label": "Roleta"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/7.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Provably fair",
+        "label": "Provably fair"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/8.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lance Certo — Backoffice",
+        "label": "Backoffice"
+      },
+      {
+        "src": "assets/projetos/lance-certo-apostas/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lance Certo — Versão mobile",
+        "label": "Versão mobile"
+      }
+    ]
   }
 ]

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Painel de leads — Âncora</title>
+<style>
+:root{--navy:#0b1f3a;--em:#10b981;--em2:#059669;--bg:#f3f6fa;--line:#e3e9f1;--mut:#5b6b82;--ink:#0f172a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",Roboto,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.top{background:var(--navy);color:#fff;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between}.top b{font-size:19px;display:flex;gap:10px;align-items:center}.top i{width:32px;height:32px;border-radius:9px;background:#13315c;display:grid;place-items:center}
+.top button,.btn{border:0;border-radius:10px;padding:10px 16px;font:inherit;font-weight:700;cursor:pointer;background:var(--em);color:#fff}.btn.g{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--line)}
+main{max-width:1240px;margin:0 auto;padding:26px 24px}
+.login{max-width:380px;margin:12vh auto;background:#fff;padding:32px;border-radius:22px;box-shadow:0 30px 60px -30px rgba(11,31,58,.4);text-align:center}.login input{width:100%;padding:14px;border:1.5px solid var(--line);border-radius:12px;font:inherit;margin:16px 0 12px;outline:0}.login input:focus{border-color:var(--em)}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:22px}.kpi{background:#fff;border-radius:16px;padding:18px;border:1px solid var(--line)}.kpi small{color:var(--mut);font-weight:600;font-size:13px}.kpi b{display:block;font-size:30px;margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+.panel{background:#fff;border-radius:18px;border:1px solid var(--line);overflow:hidden}.tools{display:flex;gap:10px;padding:16px;border-bottom:1px solid var(--line);flex-wrap:wrap;align-items:center}
+.tools input,.tools select{padding:10px 13px;border:1.5px solid var(--line);border-radius:10px;font:inherit;outline:0}.tools input{flex:1;min-width:180px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);padding:12px 16px;background:#f8fafc}td{padding:14px 16px;border-top:1px solid var(--line);vertical-align:top}tr:hover td{background:#fafcff}
+.nm{font-weight:700}.sub{color:var(--mut);font-size:13px}
+.st{border:0;border-radius:99px;padding:6px 12px;font:inherit;font-weight:700;font-size:12.5px;cursor:pointer;appearance:none}
+.st.novo{background:#dbeafe;color:#1d4ed8}.st.contatado{background:#fff4d6;color:#8a6100}.st.proposta{background:#ede9fe;color:#6d28d9}.st.fechado{background:#d9f5e5;color:#1a7a47}.st.perdido{background:#fde3e4;color:#b42328}
+.wa{color:var(--em2);font-weight:700;text-decoration:none}
+.funnel div{margin:12px 0}.funnel .r{display:flex;justify-content:space-between;font-size:14px;font-weight:600}.funnel .b{height:9px;background:#eef2f7;border-radius:9px;margin-top:5px}.funnel .b i{display:block;height:100%;border-radius:9px;background:var(--em)}
+textarea.nt{width:100%;border:1.5px solid transparent;border-radius:8px;font:inherit;font-size:13px;padding:6px 8px;background:#f8fafc;resize:vertical;min-height:34px;outline:0}textarea.nt:focus{border-color:var(--em);background:#fff}
+.empty{padding:50px;text-align:center;color:var(--mut)}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}table,thead,tbody,tr,td{display:block}thead{display:none}td{border:0;padding:6px 16px}tr{border-top:1px solid var(--line);padding:10px 0}}
+</style></head>
+<body>
+<div class="top"><b><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="5" r="2.2"/><path d="M12 7.2V21M7 11h10M4 15c0 3.5 3.6 6 8 6s8-2.5 8-6"/></svg></i>Âncora • Painel de leads</b><div id="acts" hidden><button class="btn g" id="exp" style="margin-right:8px">Exportar CSV</button><button id="out" style="background:#13315c">Sair</button></div></div>
+<main id="m"></main>
+<script>
+const $=(s)=>document.querySelector(s);let TOKEN=sessionStorage.getItem('tk')||new URLSearchParams(location.search).get('token')||'',L=[],F={s:'',q:''};
+const ST=['novo','contatado','proposta','fechado','perdido'],LB={novo:'Novo',contatado:'Contatado',proposta:'Proposta enviada',fechado:'Fechado',perdido:'Perdido'};
+const api=(p,o={})=>fetch('/api/admin'+p,{...o,headers:{...(o.headers||{}),Authorization:'Bearer '+TOKEN,'Content-Type':'application/json'}});
+function login(err){$('#acts').hidden=true;$('#m').innerHTML=`<div class="login"><h2 style="margin:0">Acesso restrito</h2><p class="sub">Informe o token do painel.</p><input id="tk" type="password" placeholder="Token de acesso" autofocus><div style="color:#c8282d;font-size:13px;min-height:18px">${err||''}</div><button class="btn" style="width:100%" onclick="go()">Entrar</button></div>`;$('#tk').addEventListener('keydown',e=>e.key==='Enter'&&go())}
+async function go(){TOKEN=($('#tk')||{}).value||TOKEN;const r=await api('/leads');if(r.status===401){sessionStorage.removeItem('tk');return login('Token inválido.')}sessionStorage.setItem('tk',TOKEN);L=await r.json();$('#acts').hidden=false;draw()}
+const dt=s=>new Date(s).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+function draw(){const c={};ST.forEach(s=>c[s]=L.filter(l=>l.status===s).length);const today=L.filter(l=>new Date(l.createdAt).toDateString()===new Date().toDateString()).length;const conv=L.length?Math.round(c.fechado/L.length*100):0;
+ const q=F.q.toLowerCase();const rows=L.filter(l=>(!F.s||l.status===F.s)&&(!q||(l.name+l.email+l.phone+l.company+l.service).toLowerCase().includes(q)));
+ const by={};L.forEach(l=>by[l.service]=(by[l.service]||0)+1);const top=Object.entries(by).sort((a,b)=>b[1]-a[1]).slice(0,5),tm=top.length?top[0][1]:1;
+ $('#m').innerHTML=`<div class="kpis"><div class="kpi"><small>Leads no total</small><b>${L.length}</b></div><div class="kpi"><small>Recebidos hoje</small><b>${today}</b></div><div class="kpi"><small>Aguardando contato</small><b>${c.novo}</b></div><div class="kpi"><small>Propostas enviadas</small><b>${c.proposta}</b></div><div class="kpi"><small>Taxa de fechamento</small><b>${conv}%</b></div></div>
+ <div class="grid"><div class="panel"><div class="tools"><input id="q" placeholder="Buscar por nome, e-mail, telefone…" value="${F.q}"><select id="fs"><option value="">Todos os status</option>${ST.map(s=>`<option value="${s}" ${F.s===s?'selected':''}>${LB[s]} (${c[s]})</option>`).join('')}</select></div>
+ ${rows.length?`<table><thead><tr><th>Lead</th><th>Interesse</th><th>Status</th><th>Observações</th></tr></thead><tbody>${rows.map(l=>`<tr><td><div class="nm">${l.name}</div><div class="sub">${l.email}</div><div class="sub"><a class="wa" target="_blank" href="https://wa.me/55${l.phone}?text=${encodeURIComponent('Olá '+l.name.split(' ')[0]+', aqui é da Âncora Contabilidade. Recebemos seu pedido!')}">${l.phone.replace(/(\d{2})(\d{4,5})(\d{4})/,'($1) $2-$3')} • WhatsApp</a></div></td><td><b>${l.service}</b><div class="sub">${l.type}</div><div class="sub">${l.revenue} • ${dt(l.createdAt)}</div></td><td><select class="st ${l.status}" data-id="${l.id}">${ST.map(s=>`<option value="${s}" ${l.status===s?'selected':''}>${LB[s]}</option>`).join('')}</select><div class="sub" style="margin-top:6px">${l.id}</div></td><td><textarea class="nt" data-id="${l.id}" placeholder="Adicionar nota…">${l.notes||''}</textarea></td></tr>`).join('')}</tbody></table>`:'<div class="empty">Nenhum lead encontrado.</div>'}</div>
+ <div><div class="panel" style="padding:20px;margin-bottom:18px"><b>Funil</b><div class="funnel">${ST.map(s=>`<div><div class="r"><span>${LB[s]}</span><span>${c[s]}</span></div><div class="b"><i style="width:${L.length?c[s]/L.length*100:0}%;${s==='perdido'?'background:#e5484d':s==='fechado'?'background:#059669':''}"></i></div></div>`).join('')}</div></div>
+ <div class="panel" style="padding:20px"><b>Serviços mais pedidos</b><div class="funnel">${top.map(([n,v])=>`<div><div class="r"><span>${n}</span><span>${v}</span></div><div class="b"><i style="width:${v/tm*100}%;background:#13315c"></i></div></div>`).join('')}</div></div></div></div>`;
+ $('#q').oninput=e=>{F.q=e.target.value;const p=e.target.selectionStart;draw();$('#q').focus();$('#q').setSelectionRange(p,p)};$('#fs').onchange=e=>{F.s=e.target.value;draw()};
+ document.querySelectorAll('select.st').forEach(s=>s.onchange=async()=>{const r=await api('/leads/'+s.dataset.id,{method:'PATCH',body:JSON.stringify({status:s.value})});const u=await r.json();Object.assign(L.find(x=>x.id===u.id),u);draw()});
+ document.querySelectorAll('textarea.nt').forEach(t=>t.onchange=async()=>{await api('/leads/'+t.dataset.id,{method:'PATCH',body:JSON.stringify({notes:t.value})});L.find(x=>x.id===t.dataset.id).notes=t.value})}
+$('#out').onclick=()=>{sessionStorage.removeItem('tk');TOKEN='';login()};
+$('#exp').onclick=async()=>{const r=await fetch('/api/admin/export.csv?token='+encodeURIComponent(TOKEN));const b=await r.blob();const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='leads-ancora.csv';a.click()};
+TOKEN?go():login();setInterval(()=>TOKEN&&!document.activeElement.matches('textarea,input')&&api('/leads').then(r=>r.ok&&r.json()).then(j=>{if(j&&j.length!==L.length){L=j;draw()}}),15000);
+</script></body></html>
