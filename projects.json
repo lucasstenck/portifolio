@@ -7797,5 +7797,132 @@
         "label": "Versão mobile"
       }
     ]
+  },
+  {
+    "id": "lastro-credito",
+    "source": "oryveen",
+    "kind": "sistemas",
+    "title": "Lastro — site e aplicativo",
+    "description": "Projeto completo com site e aplicativo juntos: painel administrativo web para aprovar empréstimos, acompanhar cobranças e revisar alertas de fraude, e aplicativo do cliente para simular, contratar, assinar e pagar parcelas por Pix. Dados fictícios e integrações em ambiente de demonstração.",
+    "tags": [
+      "Site + Aplicativo",
+      "Gestão de empréstimos",
+      "Pix e contrato digital"
+    ],
+    "cover": "assets/projetos/lastro-credito/cover.webp",
+    "images": [
+      {
+        "src": "assets/projetos/lastro-credito/1.webp",
+        "w": 1536,
+        "h": 1024,
+        "alt": "Lastro, painel web e aplicativo do cliente em computador e celulares",
+        "label": "Apresentação: painel web e aplicativo"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/2.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Abertura do app",
+        "label": "Abertura do app"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/3.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Login do app",
+        "label": "Login do app"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/4.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Início do cliente",
+        "label": "Início do cliente"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/5.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Simulação de empréstimo",
+        "label": "Simulação de empréstimo"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/6.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Nova solicitação",
+        "label": "Nova solicitação"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/7.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Contrato ativo",
+        "label": "Contrato ativo"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/8.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Calendário de parcelas",
+        "label": "Calendário de parcelas"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/9.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Pix com QR Code (demonstração)",
+        "label": "Pix com QR Code (demonstração)"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/10.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Extrato e recibos",
+        "label": "Extrato e recibos"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/11.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Contrato digital",
+        "label": "Contrato digital"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/12.webp",
+        "w": 390,
+        "h": 844,
+        "alt": "Lastro — Verificação de identidade",
+        "label": "Verificação de identidade"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/13.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lastro — Painel: visão geral",
+        "label": "Painel: visão geral"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/14.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lastro — Painel: clientes",
+        "label": "Painel: clientes"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/15.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lastro — Painel: empréstimos e aprovações",
+        "label": "Painel: empréstimos e aprovações"
+      },
+      {
+        "src": "assets/projetos/lastro-credito/16.webp",
+        "w": 800,
+        "h": 500,
+        "alt": "Lastro — Painel: central antifraude",
+        "label": "Painel: central antifraude"
+      }
+    ]
   }
 ]
